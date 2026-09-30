@@ -1,0 +1,152 @@
+.transactions-page {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #07131f;
+  color: #ffffff;
+}
+
+.transactions-header {
+  margin-bottom: 32px;
+}
+
+.transactions-label {
+  color: #20c997;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.transactions-header h1 {
+  margin: 8px 0;
+  font-size: 32px;
+}
+
+.transactions-header p {
+  margin: 0;
+  color: #8fa3b5;
+}
+
+.transactions-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.transaction-summary-card {
+  padding: 22px;
+  background-color: #0b1726;
+  border: 1px solid #1c3448;
+  border-radius: 10px;
+}
+
+.transaction-summary-card span {
+  color: #8fa3b5;
+}
+
+.transaction-summary-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.transactions-panel {
+  padding: 26px;
+  background-color: #0b1726;
+  border: 1px solid #1c3448;
+  border-radius: 10px;
+}
+
+.transactions-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.transactions-panel-header h2 {
+  margin: 0 0 6px;
+}
+
+.transactions-panel-header p {
+  margin: 0;
+  color: #8fa3b5;
+}
+
+.transactions-filters {
+  display: flex;
+  gap: 12px;
+}
+
+.transactions-filters input,
+.transactions-filters select {
+  padding: 10px 12px;
+  border: 1px solid #1c3448;
+  border-radius: 6px;
+  background-color: #07131f;
+  color: #ffffff;
+}
+
+.transactions-table-wrapper {
+  overflow-x: auto;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 15px 12px;
+  text-align: left;
+  border-bottom: 1px solid #1c3448;
+}
+
+.transactions-table th {
+  color: #8fa3b5;
+  font-size: 13px;
+}
+
+.transaction-type {
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.transaction-type.income {
+  background-color: #183d2c;
+  color: #6fce91;
+}
+
+.transaction-type.expense {
+  background-color: #3d2424;
+  color: #e47d7d;
+}
+
+@media (max-width: 900px) {
+  .transactions-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transactions-panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .transactions-page {
+    padding: 24px;
+  }
+
+  .transactions-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .transactions-filters {
+    width: 100%;
+    flex-direction: column;
+  }
+}

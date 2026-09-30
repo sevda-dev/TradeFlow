@@ -1,0 +1,136 @@
+.logistics-page {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #07131f;
+  color: #ffffff;
+}
+
+.logistics-header {
+  margin-bottom: 32px;
+}
+
+.logistics-label {
+  color: #20c997;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.logistics-header h1 {
+  margin: 8px 0;
+  font-size: 32px;
+}
+
+.logistics-header p {
+  margin: 0;
+  color: #8fa3b5;
+}
+
+.logistics-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.logistics-card {
+  padding: 24px;
+  background-color: #0b1726;
+  border: 1px solid #1c3448;
+  border-radius: 10px;
+}
+
+.logistics-card span,
+.logistics-card small {
+  display: block;
+  color: #8fa3b5;
+}
+
+.logistics-card strong {
+  display: block;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.logistics-section {
+  background-color: #0b1726;
+  border: 1px solid #1c3448;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  margin: 0 0 6px;
+}
+
+.section-header p {
+  margin: 0;
+  color: #8fa3b5;
+}
+
+.logistics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.logistics-operation-card {
+  position: relative;
+  padding: 26px;
+  border: 1px solid #1c3448;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.logistics-operation-card:hover {
+  border-color: #20c997;
+  transform: translateY(-2px);
+}
+
+.operation-number {
+  color: #20c997;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.logistics-operation-card h3 {
+  margin: 12px 0 8px;
+  font-size: 20px;
+}
+
+.logistics-operation-card p {
+  margin: 0 0 18px;
+  color: #8fa3b5;
+  line-height: 1.6;
+}
+
+.operation-link {
+  color: #20c997;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .logistics-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .logistics-page {
+    padding: 24px;
+  }
+
+  .logistics-summary,
+  .logistics-grid {
+    grid-template-columns: 1fr;
+  }
+}

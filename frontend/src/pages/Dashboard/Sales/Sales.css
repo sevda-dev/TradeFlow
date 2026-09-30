@@ -1,0 +1,291 @@
+.sales-page {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #07131f;
+  color: #ffffff;
+}
+
+.sales-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 32px;
+}
+
+.sales-label {
+  color: #20c997;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.sales-header h1 {
+  margin: 8px 0;
+  font-size: 34px;
+}
+
+.sales-header p {
+  margin: 0;
+  color: #91a4b5;
+}
+
+.sales-button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  background-color: #20c997;
+  color: #07131f;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sales-button:hover {
+  background-color: #2dd4a3;
+}
+
+
+/* Summary */
+
+.sales-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.sales-card {
+  padding: 22px;
+  background-color: #0b1726;
+  border: 1px solid #1c3448;
+  border-radius: 10px;
+}
+
+.sales-card span {
+  display: block;
+  margin-bottom: 12px;
+  color: #91a4b5;
+  font-size: 13px;
+}
+
+.sales-card strong {
+  font-size: 26px;
+}
+
+
+/* Panels */
+
+.sales-panel {
+  margin-bottom: 24px;
+  background-color: #0b1726;
+  border: 1px solid #1c3448;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sales-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 24px;
+  border-bottom: 1px solid #1c3448;
+}
+
+.sales-panel-header h2 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.sales-panel-header p {
+  margin: 0;
+  color: #91a4b5;
+  font-size: 14px;
+}
+
+.sales-panel-header > span {
+  color: #91a4b5;
+  font-size: 14px;
+}
+
+.sales-panel-header a {
+  color: #20c997;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* Table */
+
+.sales-table-wrapper {
+  overflow-x: auto;
+}
+
+.sales-table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.sales-table th,
+.sales-table td {
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1px solid #1c3448;
+}
+
+.sales-table th {
+  color: #91a4b5;
+  font-size: 13px;
+}
+
+.sales-table td {
+  font-size: 14px;
+}
+
+.sales-table td a {
+  color: #20c997;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* Status */
+
+.sales-status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sales-status.pending {
+  background-color: #40371b;
+  color: #e6c95c;
+}
+
+.sales-status.quotation {
+  background-color: #24333f;
+  color: #9fb3c2;
+}
+
+.sales-status.approved,
+.sales-status.active {
+  background-color: #123d35;
+  color: #20c997;
+}
+
+
+/* Pipeline */
+
+.sales-pipeline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 28px;
+  overflow-x: auto;
+}
+
+.pipeline-step {
+  min-width: 140px;
+  padding: 18px;
+  background-color: #07131f;
+  border: 1px solid #1c3448;
+  border-radius: 8px;
+}
+
+.pipeline-step span {
+  display: block;
+  margin-bottom: 8px;
+  color: #20c997;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pipeline-step strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.pipeline-step small {
+  color: #91a4b5;
+  font-size: 13px;
+}
+
+.pipeline-arrow {
+  color: #52697a;
+  font-size: 20px;
+}
+
+
+/* Recent Sales */
+
+.recent-sales {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-sale {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 24px;
+  border-bottom: 1px solid #1c3448;
+}
+
+.recent-sale:last-child {
+  border-bottom: none;
+}
+
+.recent-sale div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.recent-sale strong {
+  font-size: 14px;
+}
+
+.recent-sale span {
+  color: #91a4b5;
+  font-size: 13px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .sales-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sales-page {
+    padding: 24px 16px;
+  }
+
+  .sales-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sales-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .recent-sale {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

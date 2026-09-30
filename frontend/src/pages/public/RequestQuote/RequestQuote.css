@@ -1,0 +1,163 @@
+.quote-page {
+  background-color: #07131f;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Hero */
+
+.quote-hero {
+  padding: 90px 24px 70px;
+  background-color: #0b1726;
+  border-bottom: 1px solid #1c3448;
+}
+
+.quote-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.quote-label {
+  color: #20c997;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.quote-hero h1 {
+  margin: 18px 0;
+  font-size: 48px;
+  line-height: 1.15;
+}
+
+.quote-hero p {
+  max-width: 650px;
+  margin: 0;
+  color: #aebdca;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Form Section */
+
+.quote-section {
+  padding: 80px 24px;
+}
+
+.quote-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 40px;
+  background-color: #0b1726;
+  border: 1px solid #1c3448;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  margin-bottom: 9px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #294257;
+  border-radius: 6px;
+  background-color: #07131f;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #718394;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #20c997;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Button */
+
+.quote-submit {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #20c997;
+  color: #07131f;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.quote-submit:hover {
+  background-color: #2dd4a3;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .quote-hero {
+    padding: 70px 20px 55px;
+  }
+
+  .quote-hero h1 {
+    font-size: 36px;
+  }
+
+  .quote-section {
+    padding: 50px 20px;
+  }
+
+  .quote-form {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .form-full {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-hero h1 {
+    font-size: 30px;
+  }
+
+  .quote-form {
+    padding: 20px;
+  }
+}

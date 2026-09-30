@@ -1,0 +1,162 @@
+.all-cases-page {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #07131f;
+  color: #ffffff;
+}
+
+.all-cases-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 32px;
+}
+
+.all-cases-label {
+  color: #20c997;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.all-cases-header h1 {
+  margin: 8px 0;
+  font-size: 34px;
+}
+
+.all-cases-header p {
+  margin: 0;
+  color: #91a4b5;
+}
+
+.all-cases-button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  background-color: #20c997;
+  color: #07131f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cases-filters {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.cases-filters input,
+.cases-filters select {
+  padding: 12px 14px;
+  border: 1px solid #1c3448;
+  border-radius: 6px;
+  background-color: #0b1726;
+  color: #ffffff;
+}
+
+.cases-filters input {
+  flex: 1;
+}
+
+.cases-panel {
+  background-color: #0b1726;
+  border: 1px solid #1c3448;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cases-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 24px;
+  border-bottom: 1px solid #1c3448;
+}
+
+.cases-panel-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.cases-panel-header span {
+  color: #91a4b5;
+  font-size: 14px;
+}
+
+.cases-table-wrapper {
+  overflow-x: auto;
+}
+
+.cases-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.cases-table th,
+.cases-table td {
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1px solid #1c3448;
+}
+
+.cases-table th {
+  color: #91a4b5;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cases-table td {
+  font-size: 14px;
+}
+
+.cases-table td a {
+  color: #20c997;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.case-status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.case-status.active {
+  background-color: #123d35;
+  color: #20c997;
+}
+
+.case-status.pending {
+  background-color: #40371b;
+  color: #e6c95c;
+}
+
+.case-status.completed {
+  background-color: #24333f;
+  color: #9fb3c2;
+}
+
+@media (max-width: 768px) {
+
+  .all-cases-page {
+    padding: 24px 16px;
+  }
+
+  .all-cases-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cases-filters {
+    flex-direction: column;
+  }
+
+  .cases-filters input,
+  .cases-filters select {
+    width: 100%;
+  }
+
+}
