@@ -9,7 +9,7 @@ function DashboardLayout() {
 
         <div className="sidebar-brand">
           <h2>PistaTrade</h2>
-          <span>ERP Dashboard</span>
+          <span>داشبورد ERP</span>
         </div>
 
         <nav className="sidebar-nav">
@@ -19,67 +19,70 @@ function DashboardLayout() {
             end
             className="sidebar-link"
           >
-            Dashboard
+            داشبورد
           </NavLink>
 
           <NavLink
             to="/dashboard/trade-cases"
             className="sidebar-link"
           >
-            Trade Cases
+            پرونده‌های تجاری
           </NavLink>
 
           <NavLink
             to="/dashboard/sales"
             className="sidebar-link"
           >
-            Sales
+            فروش
           </NavLink>
 
           <NavLink
             to="/dashboard/procurement"
             className="sidebar-link"
           >
-            Procurement
+            تأمین
           </NavLink>
 
           <NavLink
             to="/dashboard/logistics"
             className="sidebar-link"
           >
-            Logistics
+            لجستیک
           </NavLink>
 
           <NavLink
             to="/dashboard/customs"
             className="sidebar-link"
           >
-            Customs
+            گمرک
           </NavLink>
+
           <NavLink
-  to="/dashboard/profile"
-  className="sidebar-link"
->
-  Profile
- </NavLink>
- <NavLink
-  to="/dashboard/users"
-  className="sidebar-link"
->
-  Users
-</NavLink>
+            to="/dashboard/profile"
+            className="sidebar-link"
+          >
+            پروفایل
+          </NavLink>
+
+          <NavLink
+            to="/dashboard/users"
+            className="sidebar-link"
+          >
+            کاربران
+          </NavLink>
+
           <NavLink
             to="/dashboard/finance"
             className="sidebar-link"
           >
-            Finance
+            امور مالی
           </NavLink>
 
           <NavLink
             to="/dashboard/documents"
             className="sidebar-link"
           >
-            Documents
+            اسناد
           </NavLink>
 
         </nav>

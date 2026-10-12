@@ -8,13 +8,13 @@ function Logistics() {
       <header className="logistics-header">
         <div>
           <span className="logistics-label">
-            LOGISTICS
+            لجستیک
           </span>
 
-          <h1>Logistics</h1>
+          <h1>لجستیک</h1>
 
           <p>
-            Manage shipments, drivers, vehicles, and weighbridge operations.
+            مدیریت محموله‌ها، رانندگان، وسایل نقلیه و عملیات باسکول.
           </p>
         </div>
       </header>
@@ -22,27 +22,27 @@ function Logistics() {
       <section className="logistics-summary">
 
         <div className="logistics-card">
-          <span>Active Shipments</span>
+          <span>محموله‌های فعال</span>
           <strong>12</strong>
-          <small>Currently in transit</small>
+          <small>در حال حمل</small>
         </div>
 
         <div className="logistics-card">
-          <span>Available Drivers</span>
+          <span>رانندگان در دسترس</span>
           <strong>18</strong>
-          <small>Ready for assignment</small>
+          <small>آماده اختصاص</small>
         </div>
 
         <div className="logistics-card">
-          <span>Vehicles</span>
+          <span>وسایل نقلیه</span>
           <strong>24</strong>
-          <small>Registered vehicles</small>
+          <small>وسایل نقلیه ثبت‌شده</small>
         </div>
 
         <div className="logistics-card">
-          <span>Pending Weighbridge</span>
+          <span>باسکول‌های در انتظار</span>
           <strong>5</strong>
-          <small>Waiting for weighing</small>
+          <small>در انتظار وزن‌کشی</small>
         </div>
 
       </section>
@@ -51,9 +51,9 @@ function Logistics() {
 
         <div className="section-header">
           <div>
-            <h2>Logistics Operations</h2>
+            <h2>عملیات لجستیک</h2>
             <p>
-              Manage daily transportation operations.
+              مدیریت عملیات روزانه حمل‌ونقل.
             </p>
           </div>
         </div>
@@ -65,12 +65,12 @@ function Logistics() {
             className="logistics-operation-card"
           >
             <span className="operation-number">01</span>
-            <h3>Shipments</h3>
+            <h3>محموله‌ها</h3>
             <p>
-              View and manage all shipments and their transportation status.
+              مشاهده و مدیریت تمام محموله‌ها و وضعیت حمل‌ونقل آن‌ها.
             </p>
             <span className="operation-link">
-              View Shipments →
+              مشاهده محموله‌ها ←
             </span>
           </Link>
 
@@ -79,12 +79,12 @@ function Logistics() {
             className="logistics-operation-card"
           >
             <span className="operation-number">02</span>
-            <h3>Drivers</h3>
+            <h3>رانندگان</h3>
             <p>
-              Manage drivers, assignments, and driver information.
+              مدیریت رانندگان، مأموریت‌ها و اطلاعات رانندگان.
             </p>
             <span className="operation-link">
-              View Drivers →
+              مشاهده رانندگان ←
             </span>
           </Link>
 
@@ -93,12 +93,12 @@ function Logistics() {
             className="logistics-operation-card"
           >
             <span className="operation-number">03</span>
-            <h3>Vehicles</h3>
+            <h3>وسایل نقلیه</h3>
             <p>
-              Manage vehicles, plates, and transportation information.
+              مدیریت وسایل نقلیه، پلاک‌ها و اطلاعات حمل‌ونقل.
             </p>
             <span className="operation-link">
-              View Vehicles →
+              مشاهده وسایل نقلیه ←
             </span>
           </Link>
 
@@ -107,12 +107,12 @@ function Logistics() {
             className="logistics-operation-card"
           >
             <span className="operation-number">04</span>
-            <h3>Weighbridge</h3>
+            <h3>باسکول</h3>
             <p>
-              Record gross, tare, and net weights for shipments.
+              ثبت وزن ناخالص، وزن خالی و وزن خالص محموله‌ها.
             </p>
             <span className="operation-link">
-              View Weighbridge →
+              مشاهده باسکول ←
             </span>
           </Link>
 

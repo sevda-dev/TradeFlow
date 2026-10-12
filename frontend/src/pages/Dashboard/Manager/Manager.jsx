@@ -8,64 +8,64 @@ function Manager() {
       <header className="manager-header">
         <div>
           <span className="manager-label">
-            MANAGEMENT
+            مدیریت
           </span>
 
-          <h1>Manager Dashboard</h1>
+          <h1>داشبورد مدیر</h1>
 
           <p>
-            Monitor business performance, trade operations, and financial activity.
+            نظارت بر عملکرد کسب‌وکار، عملیات تجاری و فعالیت‌های مالی.
           </p>
         </div>
 
         <div className="manager-user">
-          <span>Welcome</span>
-          <strong>Manager</strong>
+          <span>خوش آمدید</span>
+          <strong>مدیر</strong>
         </div>
       </header>
 
 
-      {/* Main KPIs */}
+      {/* شاخص‌های اصلی */}
 
       <section className="manager-summary">
 
         <article className="manager-card">
-          <span>Active Trade Cases</span>
+          <span>پرونده‌های تجاری فعال</span>
           <strong>24</strong>
-          <small>8 sales · 16 purchases</small>
+          <small>8 فروش · 16 خرید</small>
         </article>
 
         <article className="manager-card">
-          <span>Total Trade Value</span>
+          <span>ارزش کل تجارت</span>
           <strong>$2.48M</strong>
-          <small>Current active cases</small>
+          <small>پرونده‌های فعال فعلی</small>
         </article>
 
         <article className="manager-card">
-          <span>Estimated Profit</span>
+          <span>سود برآوردی</span>
           <strong>$320K</strong>
-          <small>Current trade cases</small>
+          <small>پرونده‌های تجاری فعلی</small>
         </article>
 
         <article className="manager-card">
-          <span>Pending Payments</span>
+          <span>پرداخت‌های در انتظار</span>
           <strong>$170K</strong>
-          <small>5 payment requests</small>
+          <small>5 درخواست پرداخت</small>
         </article>
 
       </section>
 
 
-      {/* Trade Performance */}
+      {/* عملکرد تجاری */}
 
       <section className="manager-panel">
 
         <div className="manager-panel-header">
           <div>
-            <h2>Trade Performance</h2>
+            <h2>عملکرد تجاری</h2>
 
             <p>
-              Current commercial performance.
+              عملکرد تجاری فعلی.
             </p>
           </div>
         </div>
@@ -73,23 +73,23 @@ function Manager() {
         <div className="performance-grid">
 
           <div className="performance-item">
-            <span>Sales Value</span>
+            <span>ارزش فروش</span>
             <strong>$1.24M</strong>
           </div>
 
           <div className="performance-item">
-            <span>Purchase Value</span>
+            <span>ارزش خرید</span>
             <strong>$920K</strong>
           </div>
 
           <div className="performance-item">
-            <span>Gross Profit</span>
+            <span>سود ناخالص</span>
             <strong>$320K</strong>
           </div>
 
           <div className="performance-item">
-            <span>Total Tonnage</span>
-            <strong>685 Tons</strong>
+            <span>مجموع تناژ</span>
+            <strong>685 تن</strong>
           </div>
 
         </div>
@@ -97,38 +97,38 @@ function Manager() {
       </section>
 
 
-      {/* Trade Cases */}
+      {/* پرونده‌های تجاری */}
 
       <section className="manager-panel">
 
         <div className="manager-panel-header">
           <div>
-            <h2>Trade Cases</h2>
+            <h2>پرونده‌های تجاری</h2>
 
             <p>
-              Overview of current case statuses.
+              نمای کلی وضعیت پرونده‌های فعلی.
             </p>
           </div>
 
           <Link to="/dashboard/trade-cases">
-            View All
+            مشاهده همه
           </Link>
         </div>
 
         <div className="case-status-grid">
 
           <div className="case-status-card">
-            <span>Pending</span>
+            <span>در انتظار</span>
             <strong>5</strong>
           </div>
 
           <div className="case-status-card">
-            <span>In Progress</span>
+            <span>در حال انجام</span>
             <strong>24</strong>
           </div>
 
           <div className="case-status-card">
-            <span>Completed</span>
+            <span>تکمیل‌شده</span>
             <strong>13</strong>
           </div>
 
@@ -137,16 +137,16 @@ function Manager() {
       </section>
 
 
-      {/* Department Activity */}
+      {/* فعالیت واحدها */}
 
       <section className="manager-panel">
 
         <div className="manager-panel-header">
           <div>
-            <h2>Department Activity</h2>
+            <h2>فعالیت واحدها</h2>
 
             <p>
-              Current activity across company departments.
+              فعالیت فعلی در بخش‌های مختلف شرکت.
             </p>
           </div>
         </div>
@@ -157,45 +157,45 @@ function Manager() {
             to="/dashboard/sales"
             className="department-card"
           >
-            <span>Sales</span>
+            <span>فروش</span>
             <strong>12</strong>
-            <small>Pending requests</small>
+            <small>درخواست‌های در انتظار</small>
           </Link>
 
           <Link
             to="/dashboard/procurement"
             className="department-card"
           >
-            <span>Procurement</span>
+            <span>تأمین</span>
             <strong>9</strong>
-            <small>Active purchases</small>
+            <small>خریدهای فعال</small>
           </Link>
 
           <Link
             to="/dashboard/logistics"
             className="department-card"
           >
-            <span>Logistics</span>
+            <span>لجستیک</span>
             <strong>8</strong>
-            <small>Active shipments</small>
+            <small>محموله‌های فعال</small>
           </Link>
 
           <Link
             to="/dashboard/customs"
             className="department-card"
           >
-            <span>Customs</span>
+            <span>گمرک</span>
             <strong>6</strong>
-            <small>Open declarations</small>
+            <small>اظهارنامه‌های باز</small>
           </Link>
 
           <Link
             to="/dashboard/finance"
             className="department-card"
           >
-            <span>Finance</span>
+            <span>امور مالی</span>
             <strong>5</strong>
-            <small>Pending payments</small>
+            <small>پرداخت‌های در انتظار</small>
           </Link>
 
         </div>
@@ -203,21 +203,21 @@ function Manager() {
       </section>
 
 
-      {/* Recent Cases */}
+      {/* پرونده‌های اخیر */}
 
       <section className="manager-panel">
 
         <div className="manager-panel-header">
           <div>
-            <h2>Recent Trade Cases</h2>
+            <h2>پرونده‌های تجاری اخیر</h2>
 
             <p>
-              Recently created or updated cases.
+              پرونده‌هایی که اخیراً ایجاد یا به‌روزرسانی شده‌اند.
             </p>
           </div>
 
           <Link to="/dashboard/trade-cases">
-            View All
+            مشاهده همه
           </Link>
         </div>
 
@@ -227,12 +227,12 @@ function Manager() {
 
             <thead>
               <tr>
-                <th>Case</th>
-                <th>Customer</th>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Value</th>
-                <th>Status</th>
+                <th>پرونده</th>
+                <th>مشتری</th>
+                <th>محصول</th>
+                <th>مقدار</th>
+                <th>ارزش</th>
+                <th>وضعیت</th>
               </tr>
             </thead>
 
@@ -242,11 +242,11 @@ function Manager() {
                 <td>TR-001</td>
                 <td>Global Foods Ltd.</td>
                 <td>Akbari</td>
-                <td>40 Tons</td>
+                <td>40 تن</td>
                 <td>$340,000</td>
                 <td>
                   <span className="manager-status active">
-                    In Progress
+                    در حال انجام
                   </span>
                 </td>
               </tr>
@@ -255,11 +255,11 @@ function Manager() {
                 <td>TR-002</td>
                 <td>Euro Nuts GmbH</td>
                 <td>Ahmad Aghaei</td>
-                <td>20 Tons</td>
+                <td>20 تن</td>
                 <td>$160,000</td>
                 <td>
                   <span className="manager-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
               </tr>
@@ -268,11 +268,11 @@ function Manager() {
                 <td>TR-003</td>
                 <td>Dubai Foods LLC</td>
                 <td>Fandoghi</td>
-                <td>30 Tons</td>
+                <td>30 تن</td>
                 <td>$207,000</td>
                 <td>
                   <span className="manager-status completed">
-                    Completed
+                    تکمیل‌شده
                   </span>
                 </td>
               </tr>
@@ -286,16 +286,16 @@ function Manager() {
       </section>
 
 
-      {/* Alerts */}
+      {/* هشدارها */}
 
       <section className="manager-panel">
 
         <div className="manager-panel-header">
           <div>
-            <h2>Management Alerts</h2>
+            <h2>هشدارهای مدیریتی</h2>
 
             <p>
-              Items requiring attention.
+              مواردی که نیاز به توجه دارند.
             </p>
           </div>
         </div>
@@ -303,23 +303,23 @@ function Manager() {
         <div className="manager-alerts">
 
           <div className="manager-alert warning">
-            <strong>5 payment requests</strong>
+            <strong>5 درخواست پرداخت</strong>
             <span>
-              are waiting for financial approval.
+              در انتظار تأیید مالی هستند.
             </span>
           </div>
 
           <div className="manager-alert warning">
-            <strong>3 shipments</strong>
+            <strong>3 محموله</strong>
             <span>
-              are currently waiting for customs clearance.
+              در حال حاضر در انتظار ترخیص گمرکی هستند.
             </span>
           </div>
 
           <div className="manager-alert info">
-            <strong>2 trade cases</strong>
+            <strong>2 پرونده تجاری</strong>
             <span>
-              have exceeded their expected processing time.
+              از زمان مورد انتظار برای پردازش عبور کرده‌اند.
             </span>
           </div>
 

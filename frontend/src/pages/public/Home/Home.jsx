@@ -4,33 +4,33 @@ function Home() {
   return (
     <main className="home-page">
 
-      {/* Hero Section */}
+      {/* بخش هیرو */}
       <section className="hero-section">
         <div className="hero-content">
 
           <span className="hero-label">
-            PREMIUM PISTACHIOS FROM IRAN
+            پسته ممتاز ایرانی
           </span>
 
           <h1>
-            Premium Iranian Pistachios
+            پسته ممتاز ایرانی
             <br />
-            for Global Markets
+            برای بازارهای جهانی
           </h1>
 
           <p>
-            We source and supply high-quality Iranian pistachios
-            for international buyers, with reliable trade and
-            logistics coordination.
+            ما پسته ایرانی باکیفیت را برای خریداران بین‌المللی
+            تأمین و عرضه می‌کنیم و هماهنگی مطمئن تجارت و
+            لجستیک را انجام می‌دهیم.
           </p>
 
           <div className="hero-actions">
             <a href="/products" className="hero-button primary">
-              Explore Products
+              مشاهده محصولات
             </a>
 
             <a href="/quote" className="hero-button secondary">
-              Request a Quote
+              درخواست قیمت
             </a>
           </div>
 
@@ -38,20 +38,20 @@ function Home() {
       </section>
 
 
-      {/* Products Section */}
+      {/* بخش محصولات */}
       <section className="products-section">
         <div className="section-container">
 
           <div className="section-heading">
-            <span>OUR PRODUCTS</span>
+            <span>محصولات ما</span>
 
             <h2>
-              Iranian Pistachio Varieties
+              انواع پسته ایرانی
             </h2>
 
             <p>
-              Explore our selection of Iranian pistachios
-              available for international trade.
+              مجموعه‌ای از پسته‌های ایرانی موجود برای
+              تجارت بین‌المللی را بررسی کنید.
             </p>
           </div>
 
@@ -60,32 +60,32 @@ function Home() {
             <div className="pistachio-product">
               <h3>Akbari</h3>
               <p>
-                A premium long pistachio variety known for
-                its distinctive shape and quality.
+                نوعی پسته ممتاز و کشیده که به دلیل
+                شکل خاص و کیفیت بالا شناخته می‌شود.
               </p>
             </div>
 
             <div className="pistachio-product">
               <h3>Ahmad Aghaei</h3>
               <p>
-                A popular Iranian pistachio variety suitable
-                for different international markets.
+                یکی از انواع محبوب پسته ایرانی که برای
+                بازارهای مختلف بین‌المللی مناسب است.
               </p>
             </div>
 
             <div className="pistachio-product">
               <h3>Fandoghi</h3>
               <p>
-                A round pistachio variety widely traded
-                in international markets.
+                نوعی پسته گرد که در بازارهای بین‌المللی
+                به‌طور گسترده معامله می‌شود.
               </p>
             </div>
 
             <div className="pistachio-product">
               <h3>Kalleh Ghouchi</h3>
               <p>
-                A large-sized pistachio variety valued for
-                its distinctive appearance and taste.
+                نوعی پسته درشت که به دلیل ظاهر خاص
+                و طعم مطلوب ارزشمند است.
               </p>
             </div>
 
@@ -95,49 +95,49 @@ function Home() {
       </section>
 
 
-      {/* Why Us Section */}
+      {/* بخش چرا ما */}
       <section className="why-section">
         <div className="section-container">
 
           <div className="section-heading">
-            <span>WHY CHOOSE US</span>
+            <span>چرا ما را انتخاب کنید</span>
 
             <h2>
-              Reliable Pistachio Trade
+              تجارت مطمئن پسته
             </h2>
 
             <p>
-              From sourcing to international delivery,
-              we coordinate the trading process with our partners.
+              از تأمین تا تحویل بین‌المللی، فرآیند تجارت را
+              با همکاری شرکای خود هماهنگ می‌کنیم.
             </p>
           </div>
 
           <div className="why-grid">
 
             <div className="why-card">
-              <h3>Quality Sourcing</h3>
+              <h3>تأمین باکیفیت</h3>
 
               <p>
-                We work with suppliers to source pistachios
-                according to customer requirements.
+                ما با تأمین‌کنندگان همکاری می‌کنیم تا پسته را
+                مطابق با نیازهای مشتری تأمین کنیم.
               </p>
             </div>
 
             <div className="why-card">
-              <h3>International Trade</h3>
+              <h3>تجارت بین‌المللی</h3>
 
               <p>
-                We support commercial transactions with
-                buyers in international markets.
+                ما از معاملات تجاری با خریداران در
+                بازارهای بین‌المللی پشتیبانی می‌کنیم.
               </p>
             </div>
 
             <div className="why-card">
-              <h3>Logistics Coordination</h3>
+              <h3>هماهنگی لجستیک</h3>
 
               <p>
-                We coordinate transportation and shipment
-                processes from origin to destination.
+                فرآیند حمل‌ونقل و ارسال را از مبدأ
+                تا مقصد هماهنگ می‌کنیم.
               </p>
             </div>
 
@@ -147,19 +147,19 @@ function Home() {
       </section>
 
 
-      {/* How It Works */}
+      {/* نحوه کار */}
       <section className="how-section">
         <div className="section-container">
 
           <div className="section-heading">
-            <span>HOW IT WORKS</span>
+            <span>نحوه کار</span>
 
             <h2>
-              From Request to Delivery
+              از درخواست تا تحویل
             </h2>
 
             <p>
-              A simple and transparent process for international buyers.
+              فرآیندی ساده و شفاف برای خریداران بین‌المللی.
             </p>
           </div>
 
@@ -169,11 +169,11 @@ function Home() {
               <span>01</span>
 
               <h3>
-                Choose Your Product
+                محصول خود را انتخاب کنید
               </h3>
 
               <p>
-                Explore our pistachio varieties and specifications.
+                انواع پسته و مشخصات محصولات ما را بررسی کنید.
               </p>
             </div>
 
@@ -181,11 +181,11 @@ function Home() {
               <span>02</span>
 
               <h3>
-                Request a Quote
+                درخواست قیمت دهید
               </h3>
 
               <p>
-                Send us your quantity, destination and requirements.
+                مقدار، مقصد و نیازهای خود را برای ما ارسال کنید.
               </p>
             </div>
 
@@ -193,11 +193,11 @@ function Home() {
               <span>03</span>
 
               <h3>
-                We Source & Prepare
+                تأمین و آماده‌سازی
               </h3>
 
               <p>
-                We coordinate sourcing, pricing and trade arrangements.
+                تأمین، قیمت‌گذاری و هماهنگی‌های تجاری را انجام می‌دهیم.
               </p>
             </div>
 
@@ -205,11 +205,11 @@ function Home() {
               <span>04</span>
 
               <h3>
-                Shipment & Delivery
+                ارسال و تحویل
               </h3>
 
               <p>
-                We coordinate logistics and shipment to the destination.
+                لجستیک و ارسال محصول به مقصد را هماهنگ می‌کنیم.
               </p>
             </div>
 
@@ -219,21 +219,21 @@ function Home() {
       </section>
 
 
-      {/* CTA Section */}
+      {/* بخش درخواست */}
       <section className="cta-section">
         <div className="cta-content">
 
           <h2>
-            Looking for Iranian Pistachios?
+            به دنبال پسته ایرانی هستید؟
           </h2>
 
           <p>
-            Tell us your requirements and our team
-            will prepare a quotation for you.
+            نیازهای خود را با ما در میان بگذارید تا تیم ما
+            پیش‌فاکتور مناسب را برای شما آماده کند.
           </p>
 
           <a href="/quote" className="hero-button primary">
-            Request a Quote
+            درخواست قیمت
           </a>
 
         </div>

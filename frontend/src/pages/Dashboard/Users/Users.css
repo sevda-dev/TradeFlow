@@ -1,10 +1,10 @@
 .users-page {
   min-height: 100vh;
   padding: 40px;
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #F5EFE6;
+  color: #343A32;
+  box-sizing: border-box;
 }
-
 
 /* Header */
 
@@ -19,7 +19,7 @@
 .users-label {
   display: block;
   margin-bottom: 8px;
-  color: #20c997;
+  color: #637C5C;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -27,74 +27,87 @@
 
 .users-header h1 {
   margin: 0 0 10px;
+  color: #343A32;
   font-size: 34px;
 }
 
 .users-header p {
   margin: 0;
-  color: #91a4b5;
+  color: #73796F;
   font-size: 14px;
+  line-height: 1.7;
 }
-
 
 /* Add User */
 
 .add-user-button {
-  border: none;
-  border-radius: 6px;
   padding: 12px 18px;
-  background-color: #20c997;
-  color: #07131f;
+  border: 1px solid #91A88A;
+  border-radius: 7px;
+  background-color: #91A88A;
+  color: #FFFFFF;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .add-user-button:hover {
-  background-color: #2dd4a3;
+  background-color: #7F9878;
+  border-color: #7F9878;
 }
 
+.add-user-button:focus-visible,
+.back-dashboard-button:focus-visible,
+.users-table td a:focus-visible {
+  outline: 2px solid #637C5C;
+  outline-offset: 3px;
+}
 
 /* Summary */
 
 .users-summary {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   margin-bottom: 24px;
 }
 
 .users-summary-card {
+  min-width: 0;
   padding: 22px;
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D8CE;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(52, 58, 50, 0.04);
 }
 
 .users-summary-card span {
   display: block;
   margin-bottom: 10px;
-  color: #91a4b5;
+  color: #73796F;
   font-size: 13px;
 }
 
 .users-summary-card strong {
   display: block;
   margin-bottom: 6px;
+  color: #343A32;
   font-size: 28px;
+  overflow-wrap: anywhere;
 }
 
 .users-summary-card small {
-  color: #64798b;
+  color: #858A80;
   font-size: 12px;
 }
-
 
 /* Filters */
 
 .users-filters {
   display: grid;
-  grid-template-columns: 1fr 220px 180px;
+  grid-template-columns: minmax(0, 1fr) 220px 180px;
   gap: 14px;
   margin-bottom: 24px;
 }
@@ -102,33 +115,37 @@
 .users-filters input,
 .users-filters select {
   width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   padding: 12px 14px;
-  border: 1px solid #1c3448;
-  border-radius: 6px;
+  border: 1px solid #D8D8CE;
+  border-radius: 7px;
   outline: none;
-  background-color: #0b1726;
-  color: #ffffff;
+  background-color: #FFFFFF;
+  color: #343A32;
+  font-family: inherit;
   font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .users-filters input::placeholder {
-  color: #64798b;
+  color: #8A8F85;
 }
 
 .users-filters input:focus,
 .users-filters select:focus {
-  border-color: #20c997;
+  border-color: #91A88A;
+  box-shadow: 0 0 0 3px rgba(145, 168, 138, 0.18);
 }
-
 
 /* Panel */
 
 .users-panel {
   overflow: hidden;
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D8CE;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(52, 58, 50, 0.04);
 }
 
 .users-panel-header {
@@ -137,73 +154,85 @@
   justify-content: space-between;
   gap: 20px;
   padding: 22px;
-  border-bottom: 1px solid #1c3448;
+  border-bottom: 1px solid #E8E7DF;
 }
 
 .users-panel-header h2 {
   margin: 0 0 6px;
+  color: #343A32;
   font-size: 20px;
 }
 
 .users-panel-header p {
   margin: 0;
-  color: #91a4b5;
+  color: #73796F;
   font-size: 13px;
+  line-height: 1.6;
 }
 
 .users-panel-header > span {
-  color: #20c997;
+  color: #637C5C;
   font-size: 13px;
+  font-weight: 600;
 }
-
 
 /* Table */
 
 .users-table-wrapper {
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .users-table {
   width: 100%;
   min-width: 1000px;
   border-collapse: collapse;
+  background-color: #FFFFFF;
 }
 
 .users-table th,
 .users-table td {
   padding: 16px 18px;
-  border-bottom: 1px solid #1c3448;
+  border-bottom: 1px solid #E8E7DF;
   text-align: left;
   white-space: nowrap;
 }
 
 .users-table th {
-  background-color: #091522;
-  color: #91a4b5;
+  background-color: #F1F0E9;
+  color: #626C5B;
   font-size: 12px;
   font-weight: 600;
 }
 
 .users-table td {
-  color: #d9e2e8;
+  color: #343A32;
   font-size: 13px;
 }
 
+.users-table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
 .users-table tbody tr:hover {
-  background-color: #0d1c2b;
+  background-color: #FAF9F5;
+}
+
+.users-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .users-table td a {
-  color: #20c997;
+  color: #637C5C;
   text-decoration: none;
   font-weight: 600;
 }
 
 .users-table td a:hover {
+  color: #496443;
   text-decoration: underline;
 }
-
 
 /* User Cell */
 
@@ -221,8 +250,8 @@
   justify-content: center;
   flex-shrink: 0;
   border-radius: 50%;
-  background-color: #123d35;
-  color: #20c997;
+  background-color: #E4EDE1;
+  color: #496443;
   font-size: 14px;
   font-weight: 700;
 }
@@ -230,50 +259,48 @@
 .user-cell strong {
   display: block;
   margin-bottom: 3px;
-  color: #ffffff;
+  color: #343A32;
 }
 
 .user-cell span {
-  color: #64798b;
+  color: #858A80;
   font-size: 11px;
 }
-
 
 /* Role */
 
 .role-badge {
   display: inline-block;
   padding: 5px 9px;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 11px;
   font-weight: 600;
 }
 
 .role-badge.admin {
-  background-color: #123d35;
-  color: #20c997;
+  background-color: #E4EDE1;
+  color: #496443;
 }
 
 .role-badge.sales {
-  background-color: #203247;
-  color: #7db5e8;
+  background-color: #E4EBF3;
+  color: #456789;
 }
 
 .role-badge.logistics {
-  background-color: #382f22;
-  color: #d9ae5f;
+  background-color: #F4EBD1;
+  color: #80651D;
 }
 
 .role-badge.finance {
-  background-color: #332842;
-  color: #b992dd;
+  background-color: #EDE5F3;
+  color: #775594;
 }
 
 .role-badge.manager {
-  background-color: #253541;
-  color: #9fb3c2;
+  background-color: #EAECE7;
+  color: #626C5B;
 }
-
 
 /* Status */
 
@@ -283,23 +310,23 @@
   border-radius: 20px;
   font-size: 11px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .user-status.active {
-  background-color: rgba(32, 201, 151, 0.12);
-  color: #20c997;
+  background-color: #E4EDE1;
+  color: #496443;
 }
 
 .user-status.pending {
-  background-color: rgba(255, 193, 7, 0.12);
-  color: #ffc107;
+  background-color: #F4EBD1;
+  color: #80651D;
 }
 
 .user-status.inactive {
-  background-color: rgba(220, 53, 69, 0.12);
-  color: #dc3545;
+  background-color: #F4E3DF;
+  color: #9B493D;
 }
-
 
 /* Footer */
 
@@ -310,24 +337,30 @@
 .back-dashboard-button {
   display: inline-block;
   padding: 11px 16px;
-  border: 1px solid #1c3448;
-  border-radius: 6px;
-  color: #ffffff;
+  border: 1px solid #D8D8CE;
+  border-radius: 7px;
+  background-color: #FFFFFF;
+  color: #343A32;
   text-decoration: none;
   font-size: 13px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .back-dashboard-button:hover {
-  border-color: #20c997;
-  color: #20c997;
+  border-color: #91A88A;
+  background-color: #F5F7F1;
+  color: #496443;
 }
-
 
 /* Responsive */
 
 @media (max-width: 1000px) {
+  .users-page {
+    padding: 30px 24px;
+  }
+
   .users-summary {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .users-filters {
@@ -343,14 +376,39 @@
   .users-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 18px;
+  }
+
+  .users-header h1 {
+    font-size: 28px;
   }
 
   .users-summary {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .users-summary-card {
+    padding: 18px;
   }
 
   .users-panel-header {
     align-items: flex-start;
     flex-direction: column;
+    padding: 18px;
+  }
+
+  .add-user-button {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .add-user-button,
+  .users-filters input,
+  .users-filters select,
+  .users-table tbody tr,
+  .back-dashboard-button {
+    transition: none;
   }
 }

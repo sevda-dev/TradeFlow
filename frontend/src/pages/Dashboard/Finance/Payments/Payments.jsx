@@ -7,40 +7,40 @@ function Payments() {
       <header className="payments-header">
         <div>
           <span className="payments-label">
-            FINANCE
+            امور مالی
           </span>
 
-          <h1>Payments</h1>
+          <h1>پرداخت‌ها</h1>
 
           <p>
-            Manage actual payments made for trade operations.
+            مدیریت پرداخت‌های انجام‌شده برای عملیات تجاری.
           </p>
         </div>
 
         <button className="payments-button">
-          Record Payment
+          ثبت پرداخت
         </button>
       </header>
 
       <section className="payments-summary">
 
         <div className="payment-card">
-          <span>Total Payments</span>
+          <span>مجموع پرداخت‌ها</span>
           <strong>86</strong>
         </div>
 
         <div className="payment-card">
-          <span>Paid This Month</span>
+          <span>پرداخت‌شده در این ماه</span>
           <strong>$245,000</strong>
         </div>
 
         <div className="payment-card">
-          <span>Pending</span>
+          <span>در انتظار</span>
           <strong>$86,500</strong>
         </div>
 
         <div className="payment-card">
-          <span>Failed</span>
+          <span>ناموفق</span>
           <strong>3</strong>
         </div>
 
@@ -49,11 +49,11 @@ function Payments() {
       <section className="payments-panel">
 
         <div className="payments-panel-header">
-          <h2>Payment Records</h2>
+          <h2>سوابق پرداخت</h2>
 
           <input
             type="text"
-            placeholder="Search payments..."
+            placeholder="جستجوی پرداخت‌ها..."
           />
         </div>
 
@@ -63,13 +63,13 @@ function Payments() {
 
             <thead>
               <tr>
-                <th>Payment</th>
-                <th>Trade Case</th>
-                <th>Payment Request</th>
-                <th>Recipient</th>
-                <th>Amount</th>
-                <th>Method</th>
-                <th>Status</th>
+                <th>پرداخت</th>
+                <th>پرونده تجاری</th>
+                <th>درخواست پرداخت</th>
+                <th>دریافت‌کننده</th>
+                <th>مبلغ</th>
+                <th>روش پرداخت</th>
+                <th>وضعیت</th>
               </tr>
             </thead>
 
@@ -81,10 +81,10 @@ function Payments() {
                 <td>PR-001</td>
                 <td>Kerman Pistachio Co.</td>
                 <td>$80,000</td>
-                <td>Bank Transfer</td>
+                <td>انتقال بانکی</td>
                 <td>
                   <span className="payment-status completed">
-                    Completed
+                    تکمیل‌شده
                   </span>
                 </td>
               </tr>
@@ -95,10 +95,10 @@ function Payments() {
                 <td>PR-002</td>
                 <td>Global Freight Co.</td>
                 <td>$12,500</td>
-                <td>Bank Transfer</td>
+                <td>انتقال بانکی</td>
                 <td>
                   <span className="payment-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
               </tr>
@@ -109,10 +109,10 @@ function Payments() {
                 <td>PR-003</td>
                 <td>Customs Services</td>
                 <td>$4,500</td>
-                <td>Bank Transfer</td>
+                <td>انتقال بانکی</td>
                 <td>
                   <span className="payment-status completed">
-                    Completed
+                    تکمیل‌شده
                   </span>
                 </td>
               </tr>

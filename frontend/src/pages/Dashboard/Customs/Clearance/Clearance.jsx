@@ -7,40 +7,40 @@ function Clearance() {
       <header className="clearance-header">
         <div>
           <span className="clearance-label">
-            CUSTOMS
+            گمرک
           </span>
 
-          <h1>Clearance</h1>
+          <h1>ترخیص کالا</h1>
 
           <p>
-            Track customs clearance operations, costs, and brokers.
+            پیگیری عملیات ترخیص کالا، هزینه‌ها و کارگزاران گمرکی.
           </p>
         </div>
 
         <button className="clearance-button">
-          New Clearance
+          ترخیص جدید
         </button>
       </header>
 
       <section className="clearance-summary">
 
         <div className="clearance-summary-card">
-          <span>Active Clearance</span>
+          <span>ترخیص‌های فعال</span>
           <strong>9</strong>
         </div>
 
         <div className="clearance-summary-card">
-          <span>Waiting for Documents</span>
+          <span>در انتظار مدارک</span>
           <strong>4</strong>
         </div>
 
         <div className="clearance-summary-card">
-          <span>Cleared</span>
+          <span>ترخیص‌شده</span>
           <strong>23</strong>
         </div>
 
         <div className="clearance-summary-card">
-          <span>Total Costs</span>
+          <span>مجموع هزینه‌ها</span>
           <strong>$42,500</strong>
         </div>
 
@@ -51,18 +51,18 @@ function Clearance() {
         <div className="clearance-panel-header">
 
           <div>
-            <h2>Clearance Operations</h2>
+            <h2>عملیات ترخیص</h2>
 
             <p>
-              Monitor the customs clearance process for shipments.
+              روند ترخیص گمرکی محموله‌ها را پیگیری کنید.
             </p>
           </div>
 
           <select defaultValue="all">
-            <option value="all">All Status</option>
-            <option value="pending">Pending</option>
-            <option value="documents">Waiting for Documents</option>
-            <option value="cleared">Cleared</option>
+            <option value="all">همه وضعیت‌ها</option>
+            <option value="pending">در انتظار</option>
+            <option value="documents">در انتظار مدارک</option>
+            <option value="cleared">ترخیص‌شده</option>
           </select>
 
         </div>
@@ -73,13 +73,13 @@ function Clearance() {
 
             <thead>
               <tr>
-                <th>Clearance</th>
-                <th>Declaration</th>
-                <th>Shipment</th>
-                <th>Broker</th>
-                <th>Customs Cost</th>
-                <th>Commission</th>
-                <th>Status</th>
+                <th>ترخیص</th>
+                <th>اظهارنامه</th>
+                <th>محموله</th>
+                <th>کارگزار</th>
+                <th>هزینه گمرکی</th>
+                <th>کمیسیون</th>
+                <th>وضعیت</th>
               </tr>
             </thead>
 
@@ -94,7 +94,7 @@ function Clearance() {
                 <td>$800</td>
                 <td>
                   <span className="clearance-status active">
-                    In Progress
+                    در حال انجام
                   </span>
                 </td>
               </tr>
@@ -108,7 +108,7 @@ function Clearance() {
                 <td>$550</td>
                 <td>
                   <span className="clearance-status documents">
-                    Documents
+                    مدارک
                   </span>
                 </td>
               </tr>
@@ -122,7 +122,7 @@ function Clearance() {
                 <td>$1,000</td>
                 <td>
                   <span className="clearance-status cleared">
-                    Cleared
+                    ترخیص‌شده
                   </span>
                 </td>
               </tr>
@@ -136,7 +136,7 @@ function Clearance() {
                 <td>$700</td>
                 <td>
                   <span className="clearance-status active">
-                    In Progress
+                    در حال انجام
                   </span>
                 </td>
               </tr>

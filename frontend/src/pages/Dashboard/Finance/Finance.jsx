@@ -8,13 +8,13 @@ function Finance() {
       <header className="finance-header">
         <div>
           <span className="finance-label">
-            FINANCE
+            امور مالی
           </span>
 
-          <h1>Finance</h1>
+          <h1>امور مالی</h1>
 
           <p>
-            Manage payment requests, payments, transactions, and settlements.
+            مدیریت درخواست‌های پرداخت، پرداخت‌ها، تراکنش‌ها و تسویه‌حساب‌ها.
           </p>
         </div>
       </header>
@@ -22,27 +22,27 @@ function Finance() {
       <section className="finance-summary">
 
         <div className="finance-card">
-          <span>Pending Requests</span>
+          <span>درخواست‌های در انتظار</span>
           <strong>12</strong>
-          <small>Waiting for approval</small>
+          <small>در انتظار تأیید</small>
         </div>
 
         <div className="finance-card">
-          <span>Pending Payments</span>
+          <span>پرداخت‌های در انتظار</span>
           <strong>$86,500</strong>
-          <small>Payments to be processed</small>
+          <small>پرداخت‌های آماده پردازش</small>
         </div>
 
         <div className="finance-card">
-          <span>Total Transactions</span>
+          <span>مجموع تراکنش‌ها</span>
           <strong>148</strong>
-          <small>This month</small>
+          <small>این ماه</small>
         </div>
 
         <div className="finance-card">
-          <span>Pending Settlements</span>
+          <span>تسویه‌حساب‌های در انتظار</span>
           <strong>8</strong>
-          <small>Cases awaiting settlement</small>
+          <small>پرونده‌های در انتظار تسویه</small>
         </div>
 
       </section>
@@ -50,10 +50,10 @@ function Finance() {
       <section className="finance-section">
 
         <div className="section-header">
-          <h2>Financial Operations</h2>
+          <h2>عملیات مالی</h2>
 
           <p>
-            Manage the complete financial cycle of trade cases.
+            مدیریت چرخه کامل مالی پرونده‌های تجاری.
           </p>
         </div>
 
@@ -65,14 +65,14 @@ function Finance() {
           >
             <span className="operation-number">01</span>
 
-            <h3>Payment Requests</h3>
+            <h3>درخواست‌های پرداخت</h3>
 
             <p>
-              Create, review, and approve payment requests.
+              ایجاد، بررسی و تأیید درخواست‌های پرداخت.
             </p>
 
             <span className="operation-link">
-              View Payment Requests →
+              مشاهده درخواست‌های پرداخت ←
             </span>
           </Link>
 
@@ -82,14 +82,14 @@ function Finance() {
           >
             <span className="operation-number">02</span>
 
-            <h3>Payments</h3>
+            <h3>پرداخت‌ها</h3>
 
             <p>
-              Manage actual payments and payment status.
+              مدیریت پرداخت‌های انجام‌شده و وضعیت پرداخت‌ها.
             </p>
 
             <span className="operation-link">
-              View Payments →
+              مشاهده پرداخت‌ها ←
             </span>
           </Link>
 
@@ -99,14 +99,14 @@ function Finance() {
           >
             <span className="operation-number">03</span>
 
-            <h3>Transactions</h3>
+            <h3>تراکنش‌ها</h3>
 
             <p>
-              View financial transactions and money movements.
+              مشاهده تراکنش‌های مالی و جابه‌جایی‌های مالی.
             </p>
 
             <span className="operation-link">
-              View Transactions →
+              مشاهده تراکنش‌ها ←
             </span>
           </Link>
 
@@ -116,14 +116,14 @@ function Finance() {
           >
             <span className="operation-number">04</span>
 
-            <h3>Settlements</h3>
+            <h3>تسویه‌حساب‌ها</h3>
 
             <p>
-              Manage final settlements and remaining balances.
+              مدیریت تسویه‌حساب‌های نهایی و مانده حساب‌ها.
             </p>
 
             <span className="operation-link">
-              View Settlements →
+              مشاهده تسویه‌حساب‌ها ←
             </span>
           </Link>
 

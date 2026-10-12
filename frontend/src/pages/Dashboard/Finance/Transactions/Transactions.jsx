@@ -7,13 +7,13 @@ function Transactions() {
       <header className="transactions-header">
         <div>
           <span className="transactions-label">
-            FINANCE
+            امور مالی
           </span>
 
-          <h1>Transactions</h1>
+          <h1>تراکنش‌ها</h1>
 
           <p>
-            View all financial transactions and money movements.
+            مشاهده تمام تراکنش‌های مالی و جابه‌جایی‌های مالی.
           </p>
         </div>
       </header>
@@ -21,22 +21,22 @@ function Transactions() {
       <section className="transactions-summary">
 
         <div className="transaction-summary-card">
-          <span>Total Transactions</span>
+          <span>مجموع تراکنش‌ها</span>
           <strong>148</strong>
         </div>
 
         <div className="transaction-summary-card">
-          <span>Total Income</span>
+          <span>مجموع درآمد</span>
           <strong>$520,000</strong>
         </div>
 
         <div className="transaction-summary-card">
-          <span>Total Expenses</span>
+          <span>مجموع هزینه‌ها</span>
           <strong>$315,000</strong>
         </div>
 
         <div className="transaction-summary-card">
-          <span>Net Balance</span>
+          <span>موجودی خالص</span>
           <strong>$205,000</strong>
         </div>
 
@@ -47,10 +47,10 @@ function Transactions() {
         <div className="transactions-panel-header">
 
           <div>
-            <h2>Transaction History</h2>
+            <h2>تاریخچه تراکنش‌ها</h2>
 
             <p>
-              Financial movements recorded in the system.
+              جابه‌جایی‌های مالی ثبت‌شده در سیستم.
             </p>
           </div>
 
@@ -58,13 +58,13 @@ function Transactions() {
 
             <input
               type="text"
-              placeholder="Search transactions..."
+              placeholder="جستجوی تراکنش‌ها..."
             />
 
             <select defaultValue="all">
-              <option value="all">All Types</option>
-              <option value="income">Income</option>
-              <option value="expense">Expense</option>
+              <option value="all">همه انواع</option>
+              <option value="income">درآمد</option>
+              <option value="expense">هزینه</option>
             </select>
 
           </div>
@@ -77,12 +77,12 @@ function Transactions() {
 
             <thead>
               <tr>
-                <th>Transaction</th>
-                <th>Trade Case</th>
-                <th>Description</th>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Date</th>
+                <th>تراکنش</th>
+                <th>پرونده تجاری</th>
+                <th>توضیحات</th>
+                <th>نوع</th>
+                <th>مبلغ</th>
+                <th>تاریخ</th>
               </tr>
             </thead>
 
@@ -91,40 +91,40 @@ function Transactions() {
               <tr>
                 <td>TX-001</td>
                 <td>TR-001</td>
-                <td>Customer Payment</td>
+                <td>پرداخت مشتری</td>
                 <td>
                   <span className="transaction-type income">
-                    Income
+                    درآمد
                   </span>
                 </td>
                 <td>$170,000</td>
-                <td>Sep 20, 2026</td>
+                <td>20 سپتامبر 2026</td>
               </tr>
 
               <tr>
                 <td>TX-002</td>
                 <td>TR-001</td>
-                <td>Supplier Payment</td>
+                <td>پرداخت به تأمین‌کننده</td>
                 <td>
                   <span className="transaction-type expense">
-                    Expense
+                    هزینه
                   </span>
                 </td>
                 <td>$80,000</td>
-                <td>Sep 20, 2026</td>
+                <td>20 سپتامبر 2026</td>
               </tr>
 
               <tr>
                 <td>TX-003</td>
                 <td>TR-002</td>
-                <td>Freight Cost</td>
+                <td>هزینه حمل و نقل</td>
                 <td>
                   <span className="transaction-type expense">
-                    Expense
+                    هزینه
                   </span>
                 </td>
                 <td>$12,500</td>
-                <td>Sep 19, 2026</td>
+                <td>19 سپتامبر 2026</td>
               </tr>
 
             </tbody>

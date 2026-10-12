@@ -5,28 +5,28 @@ function Products() {
   return (
     <main className="products-page">
 
-      {/* Hero */}
+      {/* هیرو */}
       <section className="products-hero">
         <div className="products-container">
 
           <span className="products-label">
-            OUR PRODUCTS
+            محصولات ما
           </span>
 
           <h1>
-            Premium Iranian Pistachios
+            پسته‌های ممتاز ایرانی
           </h1>
 
           <p>
-            Explore our selection of Iranian pistachio varieties
-            available for international buyers.
+            انواع پسته ایرانی موجود برای خریداران
+            بین‌المللی را بررسی کنید.
           </p>
 
         </div>
       </section>
 
 
-      {/* Products */}
+      {/* محصولات */}
       <section className="products-section">
         <div className="products-container">
 
@@ -42,21 +42,21 @@ function Products() {
                 <div className="product-image">
                   <img
                     src="/images/pistachio-akbari.jpg"
-                    alt="Akbari Pistachio"
+                    alt="پسته Akbari"
                   />
                 </div>
 
                 <div className="product-content">
 
                   <span className="product-category">
-                    Pistachio
+                    پسته
                   </span>
 
                   <h2>Akbari</h2>
 
                   <p>
-                    A premium long pistachio variety known for
-                    its distinctive shape and commercial value.
+                    نوعی پسته ممتاز و کشیده که به دلیل
+                    شکل خاص و ارزش تجاری آن شناخته می‌شود.
                   </p>
 
                 </div>
@@ -66,7 +66,7 @@ function Products() {
                 href="/quote"
                 className="product-button"
               >
-                Request a Quote
+                درخواست قیمت
               </a>
 
             </article>
@@ -78,28 +78,28 @@ function Products() {
               <div className="product-image">
                 <img
                   src="/images/pistachio-ahmad-aghaei.jpg"
-                  alt="Ahmad Aghaei Pistachio"
+                  alt="پسته Ahmad Aghaei"
                 />
               </div>
 
               <div className="product-content">
 
                 <span className="product-category">
-                  Pistachio
+                  پسته
                 </span>
 
                 <h2>Ahmad Aghaei</h2>
 
                 <p>
-                  A popular Iranian pistachio variety with
-                  an attractive appearance and wide demand.
+                  یکی از انواع محبوب پسته ایرانی با ظاهر
+                  جذاب و تقاضای گسترده.
                 </p>
 
                 <a
                   href="/quote"
                   className="product-button"
                 >
-                  Request a Quote
+                  درخواست قیمت
                 </a>
 
               </div>
@@ -113,28 +113,28 @@ function Products() {
               <div className="product-image">
                 <img
                   src="/images/pistachio-fandoghi.jpg"
-                  alt="Fandoghi Pistachio"
+                  alt="پسته Fandoghi"
                 />
               </div>
 
               <div className="product-content">
 
                 <span className="product-category">
-                  Pistachio
+                  پسته
                 </span>
 
                 <h2>Fandoghi</h2>
 
                 <p>
-                  A round pistachio variety widely traded
-                  in international markets.
+                  نوعی پسته گرد که در بازارهای بین‌المللی
+                  به‌طور گسترده معامله می‌شود.
                 </p>
 
                 <a
                   href="/quote"
                   className="product-button"
                 >
-                  Request a Quote
+                  درخواست قیمت
                 </a>
 
               </div>
@@ -148,28 +148,28 @@ function Products() {
               <div className="product-image">
                 <img
                   src="/images/pistachio-kalleh-ghouchi.jpg"
-                  alt="Kalleh Ghouchi Pistachio"
+                  alt="پسته Kalleh Ghouchi"
                 />
               </div>
 
               <div className="product-content">
 
                 <span className="product-category">
-                  Pistachio
+                  پسته
                 </span>
 
                 <h2>Kalleh Ghouchi</h2>
 
                 <p>
-                  A large-sized Iranian pistachio variety
-                  known for its distinctive shape.
+                  نوعی پسته ایرانی درشت که به دلیل
+                  شکل خاص خود شناخته می‌شود.
                 </p>
 
                 <a
                   href="/quote"
                   className="product-button"
                 >
-                  Request a Quote
+                  درخواست قیمت
                 </a>
 
               </div>
@@ -182,24 +182,24 @@ function Products() {
       </section>
 
 
-      {/* CTA */}
+      {/* درخواست */}
       <section className="products-cta">
         <div className="products-container">
 
           <h2>
-            Looking for a Specific Pistachio?
+            به دنبال نوع خاصی از پسته هستید؟
           </h2>
 
           <p>
-            Tell us your required variety, quantity,
-            packaging, and destination.
+            نوع پسته، مقدار، بسته‌بندی و مقصد موردنظر
+            خود را به ما اطلاع دهید.
           </p>
 
           <a
             href="/quote"
             className="product-button"
           >
-            Request a Quote
+            درخواست قیمت
           </a>
 
         </div>

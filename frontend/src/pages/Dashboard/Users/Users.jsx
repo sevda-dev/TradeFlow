@@ -9,99 +9,99 @@ function Users() {
 
         <div>
           <span className="users-label">
-            ADMINISTRATION
+            مدیریت
           </span>
 
-          <h1>Users</h1>
+          <h1>کاربران</h1>
 
           <p>
-            Manage users, roles, departments, and account status.
+            مدیریت کاربران، نقش‌ها، واحدها و وضعیت حساب‌ها.
           </p>
         </div>
 
         <button className="add-user-button">
-          Add User
+          افزودن کاربر
         </button>
 
       </header>
 
 
-      {/* Summary */}
+      {/* خلاصه */}
 
       <section className="users-summary">
 
         <article className="users-summary-card">
-          <span>Total Users</span>
+          <span>مجموع کاربران</span>
           <strong>24</strong>
-          <small>Registered accounts</small>
+          <small>حساب‌های ثبت‌شده</small>
         </article>
 
         <article className="users-summary-card">
-          <span>Active Users</span>
+          <span>کاربران فعال</span>
           <strong>20</strong>
-          <small>Currently active</small>
+          <small>در حال حاضر فعال</small>
         </article>
 
         <article className="users-summary-card">
-          <span>Administrators</span>
+          <span>مدیران سیستم</span>
           <strong>2</strong>
-          <small>Full system access</small>
+          <small>دسترسی کامل به سیستم</small>
         </article>
 
         <article className="users-summary-card">
-          <span>Pending</span>
+          <span>در انتظار</span>
           <strong>2</strong>
-          <small>Awaiting activation</small>
+          <small>در انتظار فعال‌سازی</small>
         </article>
 
       </section>
 
 
-      {/* Filters */}
+      {/* فیلترها */}
 
       <section className="users-filters">
 
         <input
           type="text"
-          placeholder="Search users..."
+          placeholder="جستجوی کاربران..."
         />
 
         <select defaultValue="all">
-          <option value="all">All Roles</option>
-          <option value="admin">Admin</option>
-          <option value="manager">Manager</option>
-          <option value="sales">Sales</option>
-          <option value="procurement">Procurement</option>
-          <option value="logistics">Logistics</option>
-          <option value="customs">Customs</option>
-          <option value="finance">Finance</option>
+          <option value="all">همه نقش‌ها</option>
+          <option value="admin">مدیر سیستم</option>
+          <option value="manager">مدیر</option>
+          <option value="sales">فروش</option>
+          <option value="procurement">تأمین</option>
+          <option value="logistics">لجستیک</option>
+          <option value="customs">گمرک</option>
+          <option value="finance">امور مالی</option>
         </select>
 
         <select defaultValue="all">
-          <option value="all">All Status</option>
-          <option value="active">Active</option>
-          <option value="inactive">Inactive</option>
-          <option value="pending">Pending</option>
+          <option value="all">همه وضعیت‌ها</option>
+          <option value="active">فعال</option>
+          <option value="inactive">غیرفعال</option>
+          <option value="pending">در انتظار</option>
         </select>
 
       </section>
 
 
-      {/* Users Table */}
+      {/* جدول کاربران */}
 
       <section className="users-panel">
 
         <div className="users-panel-header">
 
           <div>
-            <h2>System Users</h2>
+            <h2>کاربران سیستم</h2>
 
             <p>
-              Users with access to the PistaTrade ERP system.
+              کاربرانی که به سیستم ERP شرکت PistaTrade دسترسی دارند.
             </p>
           </div>
 
-          <span>24 Users</span>
+          <span>24 کاربر</span>
 
         </div>
 
@@ -112,13 +112,13 @@ function Users() {
 
             <thead>
               <tr>
-                <th>User</th>
-                <th>Email</th>
-                <th>Role</th>
-                <th>Department</th>
-                <th>Status</th>
-                <th>Last Login</th>
-                <th>Action</th>
+                <th>کاربر</th>
+                <th>ایمیل</th>
+                <th>نقش</th>
+                <th>واحد</th>
+                <th>وضعیت</th>
+                <th>آخرین ورود</th>
+                <th>عملیات</th>
               </tr>
             </thead>
 
@@ -144,27 +144,27 @@ function Users() {
 
                 <td>
                   <span className="role-badge admin">
-                    Administrator
+                    مدیر سیستم
                   </span>
                 </td>
 
                 <td>
-                  Management
+                  مدیریت
                 </td>
 
                 <td>
                   <span className="user-status active">
-                    Active
+                    فعال
                   </span>
                 </td>
 
                 <td>
-                  Sep 30, 2026
+                  30 سپتامبر 2026
                 </td>
 
                 <td>
                   <Link to="/dashboard/profile">
-                    View
+                    مشاهده
                   </Link>
                 </td>
               </tr>
@@ -190,27 +190,27 @@ function Users() {
 
                 <td>
                   <span className="role-badge sales">
-                    Sales
+                    فروش
                   </span>
                 </td>
 
                 <td>
-                  Sales
+                  فروش
                 </td>
 
                 <td>
                   <span className="user-status active">
-                    Active
+                    فعال
                   </span>
                 </td>
 
                 <td>
-                  Sep 29, 2026
+                  29 سپتامبر 2026
                 </td>
 
                 <td>
                   <a href="#">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -236,27 +236,27 @@ function Users() {
 
                 <td>
                   <span className="role-badge logistics">
-                    Logistics
+                    لجستیک
                   </span>
                 </td>
 
                 <td>
-                  Logistics
+                  لجستیک
                 </td>
 
                 <td>
                   <span className="user-status active">
-                    Active
+                    فعال
                   </span>
                 </td>
 
                 <td>
-                  Sep 28, 2026
+                  28 سپتامبر 2026
                 </td>
 
                 <td>
                   <a href="#">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -282,27 +282,27 @@ function Users() {
 
                 <td>
                   <span className="role-badge finance">
-                    Finance
+                    امور مالی
                   </span>
                 </td>
 
                 <td>
-                  Finance
+                  امور مالی
                 </td>
 
                 <td>
                   <span className="user-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
 
                 <td>
-                  Never
+                  هرگز
                 </td>
 
                 <td>
                   <a href="#">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -328,27 +328,27 @@ function Users() {
 
                 <td>
                   <span className="role-badge manager">
-                    Manager
+                    مدیر
                   </span>
                 </td>
 
                 <td>
-                  Management
+                  مدیریت
                 </td>
 
                 <td>
                   <span className="user-status inactive">
-                    Inactive
+                    غیرفعال
                   </span>
                 </td>
 
                 <td>
-                  Sep 10, 2026
+                  10 سپتامبر 2026
                 </td>
 
                 <td>
                   <a href="#">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -368,7 +368,7 @@ function Users() {
           to="/dashboard"
           className="back-dashboard-button"
         >
-          Back to Dashboard
+          بازگشت به داشبورد
         </Link>
 
       </div>

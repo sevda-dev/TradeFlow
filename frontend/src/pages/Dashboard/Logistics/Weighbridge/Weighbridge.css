@@ -1,19 +1,20 @@
 .weighbridge-page {
   min-height: 100vh;
   padding: 40px;
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #F5EFE6;
+  color: #343A32;
 }
 
 .weighbridge-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   margin-bottom: 32px;
 }
 
 .weighbridge-label {
-  color: #20c997;
+  color: #637C5C;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -22,133 +23,245 @@
 .weighbridge-header h1 {
   margin: 8px 0;
   font-size: 32px;
+  color: #343A32;
 }
 
 .weighbridge-header p {
   margin: 0;
-  color: #8fa3b5;
+  color: #73796F;
+  line-height: 1.7;
 }
 
 .weighbridge-button {
   padding: 12px 18px;
-  border: none;
+  border: 1px solid #91A88A;
   border-radius: 6px;
-  background-color: #20c997;
-  color: #07131f;
+  background-color: #91A88A;
+  color: #FFFFFF;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.weighbridge-button:hover {
+  background-color: #7F9878;
+  border-color: #7F9878;
+  transform: translateY(-1px);
+}
+
+.weighbridge-button:focus-visible {
+  outline: 2px solid #637C5C;
+  outline-offset: 3px;
 }
 
 .weighbridge-summary {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
   margin-bottom: 30px;
 }
 
 .weight-summary-card {
   padding: 22px;
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D8CE;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(52, 58, 50, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.weight-summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(52, 58, 50, 0.08);
 }
 
 .weight-summary-card span {
-  color: #8fa3b5;
+  color: #73796F;
+  font-size: 14px;
 }
 
 .weight-summary-card strong {
   display: block;
   margin-top: 10px;
   font-size: 28px;
+  color: #343A32;
 }
 
 .weighbridge-panel {
   padding: 26px;
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D8CE;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(52, 58, 50, 0.04);
 }
 
 .weighbridge-panel-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 18px;
   margin-bottom: 22px;
 }
 
 .weighbridge-panel-header h2 {
   margin: 0;
+  color: #343A32;
+  font-size: 21px;
 }
 
 .weighbridge-panel-header input {
+  width: 260px;
+  max-width: 100%;
   padding: 10px 12px;
-  border: 1px solid #1c3448;
+  border: 1px solid #D8D8CE;
   border-radius: 6px;
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #FAF9F5;
+  color: #343A32;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.weighbridge-panel-header input::placeholder {
+  color: #8A9086;
+}
+
+.weighbridge-panel-header input:focus {
+  border-color: #91A88A;
+  box-shadow: 0 0 0 3px rgba(145, 168, 138, 0.18);
 }
 
 .weighbridge-table-wrapper {
+  width: 100%;
   overflow-x: auto;
+  border-radius: 6px;
 }
 
 .weighbridge-table {
   width: 100%;
   border-collapse: collapse;
+  color: #343A32;
 }
 
 .weighbridge-table th,
 .weighbridge-table td {
   padding: 15px 12px;
   text-align: left;
-  border-bottom: 1px solid #1c3448;
+  border-bottom: 1px solid #E8E7DF;
+  white-space: nowrap;
 }
 
 .weighbridge-table th {
-  color: #8fa3b5;
+  background-color: #F1F0E9;
+  color: #73796F;
   font-size: 13px;
+  font-weight: 600;
+}
+
+.weighbridge-table td {
+  font-size: 14px;
+}
+
+.weighbridge-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.weighbridge-table tbody tr:hover {
+  background-color: #F8F8F3;
+}
+
+.weighbridge-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .weight-status {
-  padding: 5px 9px;
+  display: inline-block;
+  padding: 5px 10px;
   border-radius: 20px;
   font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .weight-status.completed {
-  background-color: #183d2c;
-  color: #6fce91;
+  background-color: #E1EEE4;
+  color: #356746;
 }
 
 .weight-status.pending {
-  background-color: #3d3212;
-  color: #e6c75c;
+  background-color: #F4EBD1;
+  color: #80651D;
+}
+
+@media (max-width: 1100px) {
+  .weighbridge-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 900px) {
-  .weighbridge-summary {
-    grid-template-columns: repeat(2, 1fr);
+  .weighbridge-page {
+    padding: 30px;
+  }
+
+  .weighbridge-panel {
+    padding: 20px;
   }
 }
 
 @media (max-width: 600px) {
   .weighbridge-page {
-    padding: 24px;
+    padding: 20px 16px;
   }
 
   .weighbridge-header,
   .weighbridge-panel-header {
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: column;
     gap: 18px;
   }
 
+  .weighbridge-header h1 {
+    font-size: 26px;
+  }
+
+  .weighbridge-button {
+    align-self: flex-start;
+  }
+
   .weighbridge-summary {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .weight-summary-card {
+    padding: 18px;
+  }
+
+  .weighbridge-panel {
+    padding: 16px;
   }
 
   .weighbridge-panel-header input {
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  .weighbridge-table th,
+  .weighbridge-table td {
+    padding: 12px 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .weighbridge-button,
+  .weight-summary-card,
+  .weighbridge-table tbody tr {
+    transition: none;
+  }
+
+  .weighbridge-button:hover,
+  .weight-summary-card:hover {
+    transform: none;
   }
 }

@@ -8,97 +8,97 @@ function Documents() {
       <header className="documents-header">
         <div>
           <span className="documents-label">
-            DOCUMENTS
+            اسناد
           </span>
 
-          <h1>Documents</h1>
+          <h1>اسناد</h1>
 
           <p>
-            Manage and track documents related to trade cases,
-            shipments, customs, and finance.
+            مدیریت و پیگیری اسناد مرتبط با پرونده‌های تجاری،
+            محموله‌ها، گمرک و امور مالی.
           </p>
         </div>
 
         <button className="upload-document-button">
-          Upload Document
+          بارگذاری سند
         </button>
       </header>
 
 
-      {/* Summary */}
+      {/* خلاصه */}
 
       <section className="documents-summary">
 
         <div className="summary-card">
-          <span>Total Documents</span>
+          <span>مجموع اسناد</span>
           <strong>128</strong>
-          <small>All uploaded documents</small>
+          <small>تمام اسناد بارگذاری‌شده</small>
         </div>
 
         <div className="summary-card">
-          <span>Pending Review</span>
+          <span>در انتظار بررسی</span>
           <strong>14</strong>
-          <small>Waiting for approval</small>
+          <small>در انتظار تأیید</small>
         </div>
 
         <div className="summary-card">
-          <span>Approved</span>
+          <span>تأییدشده</span>
           <strong>96</strong>
-          <small>Verified documents</small>
+          <small>اسناد تأییدشده</small>
         </div>
 
         <div className="summary-card">
-          <span>Missing Documents</span>
+          <span>اسناد ناقص</span>
           <strong>8</strong>
-          <small>Required documents</small>
+          <small>اسناد موردنیاز</small>
         </div>
 
       </section>
 
 
-      {/* Filters */}
+      {/* فیلترها */}
 
       <section className="documents-filters">
 
         <input
           type="text"
-          placeholder="Search documents..."
+          placeholder="جستجوی اسناد..."
         />
 
         <select defaultValue="all">
-          <option value="all">All Types</option>
-          <option value="invoice">Commercial Invoice</option>
-          <option value="packing-list">Packing List</option>
-          <option value="bill-of-lading">Bill of Lading</option>
-          <option value="insurance">Insurance</option>
-          <option value="customs">Customs Document</option>
-          <option value="certificate">Certificate</option>
+          <option value="all">همه انواع</option>
+          <option value="invoice">فاکتور تجاری</option>
+          <option value="packing-list">لیست بسته‌بندی</option>
+          <option value="bill-of-lading">بارنامه</option>
+          <option value="insurance">بیمه</option>
+          <option value="customs">سند گمرکی</option>
+          <option value="certificate">گواهی</option>
         </select>
 
         <select defaultValue="all">
-          <option value="all">All Status</option>
-          <option value="approved">Approved</option>
-          <option value="pending">Pending</option>
-          <option value="missing">Missing</option>
+          <option value="all">همه وضعیت‌ها</option>
+          <option value="approved">تأییدشده</option>
+          <option value="pending">در انتظار</option>
+          <option value="missing">ناقص</option>
         </select>
 
       </section>
 
 
-      {/* Documents Table */}
+      {/* جدول اسناد */}
 
       <section className="documents-panel">
 
         <div className="documents-panel-header">
 
           <div>
-            <h2>Document Records</h2>
+            <h2>سوابق اسناد</h2>
             <p>
-              Documents associated with trade operations.
+              اسناد مرتبط با عملیات تجاری.
             </p>
           </div>
 
-          <span>128 Documents</span>
+          <span>128 سند</span>
 
         </div>
 
@@ -109,14 +109,14 @@ function Documents() {
 
             <thead>
               <tr>
-                <th>Document</th>
-                <th>Type</th>
-                <th>Trade Case</th>
-                <th>Shipment</th>
-                <th>Uploaded By</th>
-                <th>Date</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th>سند</th>
+                <th>نوع</th>
+                <th>پرونده تجاری</th>
+                <th>محموله</th>
+                <th>بارگذاری توسط</th>
+                <th>تاریخ</th>
+                <th>وضعیت</th>
+                <th>عملیات</th>
               </tr>
             </thead>
 
@@ -128,25 +128,25 @@ function Documents() {
                   <strong>Invoice_TR-001.pdf</strong>
                 </td>
 
-                <td>Commercial Invoice</td>
+                <td>فاکتور تجاری</td>
 
                 <td>TR-001</td>
 
                 <td>SH-001</td>
 
-                <td>Sales Department</td>
+                <td>واحد فروش</td>
 
-                <td>Sep 20, 2026</td>
+                <td>20 سپتامبر 2026</td>
 
                 <td>
                   <span className="document-status approved">
-                    Approved
+                    تأییدشده
                   </span>
                 </td>
 
                 <td>
                   <a href="#">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -157,25 +157,25 @@ function Documents() {
                   <strong>PackingList_TR-001.pdf</strong>
                 </td>
 
-                <td>Packing List</td>
+                <td>لیست بسته‌بندی</td>
 
                 <td>TR-001</td>
 
                 <td>SH-001</td>
 
-                <td>Logistics</td>
+                <td>لجستیک</td>
 
-                <td>Sep 20, 2026</td>
+                <td>20 سپتامبر 2026</td>
 
                 <td>
                   <span className="document-status approved">
-                    Approved
+                    تأییدشده
                   </span>
                 </td>
 
                 <td>
                   <a href="#">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -186,25 +186,25 @@ function Documents() {
                   <strong>BL_TR-002.pdf</strong>
                 </td>
 
-                <td>Bill of Lading</td>
+                <td>بارنامه</td>
 
                 <td>TR-002</td>
 
                 <td>SH-003</td>
 
-                <td>Logistics</td>
+                <td>لجستیک</td>
 
-                <td>Sep 19, 2026</td>
+                <td>19 سپتامبر 2026</td>
 
                 <td>
                   <span className="document-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
 
                 <td>
                   <a href="#">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -215,25 +215,25 @@ function Documents() {
                   <strong>Origin_TR-003.pdf</strong>
                 </td>
 
-                <td>Certificate</td>
+                <td>گواهی</td>
 
                 <td>TR-003</td>
 
                 <td>SH-004</td>
 
-                <td>Customs</td>
+                <td>گمرک</td>
 
-                <td>Sep 18, 2026</td>
+                <td>18 سپتامبر 2026</td>
 
                 <td>
                   <span className="document-status approved">
-                    Approved
+                    تأییدشده
                   </span>
                 </td>
 
                 <td>
                   <a href="#">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -244,25 +244,25 @@ function Documents() {
                   <strong>Insurance_TR-004.pdf</strong>
                 </td>
 
-                <td>Insurance</td>
+                <td>بیمه</td>
 
                 <td>TR-004</td>
 
                 <td>SH-006</td>
 
-                <td>Logistics</td>
+                <td>لجستیک</td>
 
-                <td>Sep 17, 2026</td>
+                <td>17 سپتامبر 2026</td>
 
                 <td>
                   <span className="document-status missing">
-                    Missing
+                    ناقص
                   </span>
                 </td>
 
                 <td>
                   <a href="#">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -276,32 +276,32 @@ function Documents() {
       </section>
 
 
-      {/* Document Categories */}
+      {/* دسته‌بندی اسناد */}
 
       <section className="document-categories">
 
         <div className="category-card">
-          <span>Commercial</span>
+          <span>تجاری</span>
           <strong>32</strong>
-          <p>Invoices and commercial documents</p>
+          <p>فاکتورها و اسناد تجاری</p>
         </div>
 
         <div className="category-card">
-          <span>Logistics</span>
+          <span>لجستیک</span>
           <strong>41</strong>
-          <p>Shipping and transportation documents</p>
+          <p>اسناد حمل و نقل</p>
         </div>
 
         <div className="category-card">
-          <span>Customs</span>
+          <span>گمرکی</span>
           <strong>28</strong>
-          <p>Customs and clearance documents</p>
+          <p>اسناد گمرکی و ترخیص</p>
         </div>
 
         <div className="category-card">
-          <span>Financial</span>
+          <span>مالی</span>
           <strong>27</strong>
-          <p>Payment and financial documents</p>
+          <p>اسناد پرداخت و امور مالی</p>
         </div>
 
       </section>
@@ -313,7 +313,7 @@ function Documents() {
           to="/dashboard"
           className="back-dashboard-button"
         >
-          Back to Dashboard
+          بازگشت به داشبورد
         </Link>
 
       </div>

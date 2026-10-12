@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --color-background: #F5EFE6;
+  --color-primary: #91A88A;
+  --color-primary-hover: #7F9878;
+  --color-dark: #343A32;
+  --color-surface: #FFFFFF;
+  --color-border: #D8D8CE;
+
+  /* Text */
+  --color-text: #343A32;
+  --color-text-muted: #73796F;
+
+  /* Shape */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+
+  /* Animation */
+  --transition-fast: 0.2s ease;
+}

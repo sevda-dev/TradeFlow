@@ -4,61 +4,61 @@ function Contact() {
   return (
     <main className="contact-page">
 
-      {/* Page Header */}
+      {/* سربرگ صفحه */}
       <section className="contact-hero">
         <div className="contact-container">
           <span className="contact-label">
-            GET IN TOUCH
+            در تماس باشید
           </span>
 
           <h1>
-            Contact TradeFlow
+            تماس با TradeFlow
           </h1>
 
           <p>
-            Have a question about our Iranian pistachios?
-            Contact our team and tell us what you need.
+            درباره پسته ایرانی ما سؤالی دارید؟
+            با تیم ما تماس بگیرید و نیازهای خود را با ما در میان بگذارید.
           </p>
         </div>
       </section>
 
 
-      {/* Contact Content */}
+      {/* محتوای تماس */}
       <section className="contact-section">
         <div className="contact-container contact-grid">
 
-          {/* Contact Information */}
+          {/* اطلاعات تماس */}
           <div className="contact-info">
 
             <span className="section-label">
-              CONTACT INFORMATION
+              اطلاعات تماس
             </span>
 
             <h2>
-              Let's Talk About Your Next Order
+              درباره سفارش بعدی خود صحبت کنیم
             </h2>
 
             <p>
-              Whether you are looking for a specific pistachio
-              variety, quantity, packaging, or destination,
-              our team is ready to discuss your requirements.
+              چه به دنبال نوع خاصی از پسته، مقدار، بسته‌بندی
+              یا مقصد مشخصی باشید، تیم ما آماده است
+              درباره نیازهای شما گفت‌وگو کند.
             </p>
 
             <div className="contact-details">
 
               <div className="contact-item">
-                <h3>Email</h3>
+                <h3>ایمیل</h3>
                 <p>info@tradeflow.com</p>
               </div>
 
               <div className="contact-item">
-                <h3>Phone</h3>
+                <h3>تلفن</h3>
                 <p>+1 000 000 0000</p>
               </div>
 
               <div className="contact-item">
-                <h3>Business Hours</h3>
-                <p>Monday – Friday, 9:00 AM – 6:00 PM</p>
+                <h3>ساعات کاری</h3>
+                <p>دوشنبه تا جمعه، 9:00 صبح تا 6:00 عصر</p>
               </div>
 
             </div>
@@ -66,44 +66,44 @@ function Contact() {
           </div>
 
 
-          {/* Contact Form */}
+          {/* فرم تماس */}
           <div className="contact-form-wrapper">
 
             <h2>
-              Send Us a Message
+              پیام خود را برای ما ارسال کنید
             </h2>
 
             <form className="contact-form">
 
               <div className="form-group">
                 <label htmlFor="name">
-                  Full Name
+                  نام و نام خانوادگی
                 </label>
 
                 <input
                   id="name"
                   type="text"
-                  placeholder="Your full name"
+                  placeholder="نام و نام خانوادگی شما"
                 />
               </div>
 
 
               <div className="form-group">
                 <label htmlFor="company">
-                  Company Name
+                  نام شرکت
                 </label>
 
                 <input
                   id="company"
                   type="text"
-                  placeholder="Your company name"
+                  placeholder="نام شرکت شما"
                 />
               </div>
 
 
               <div className="form-group">
                 <label htmlFor="email">
-                  Email Address
+                  آدرس ایمیل
                 </label>
 
                 <input
@@ -116,26 +116,26 @@ function Contact() {
 
               <div className="form-group">
                 <label htmlFor="country">
-                  Country
+                  کشور
                 </label>
 
                 <input
                   id="country"
                   type="text"
-                  placeholder="Your country"
+                  placeholder="کشور شما"
                 />
               </div>
 
 
               <div className="form-group">
                 <label htmlFor="message">
-                  Message
+                  پیام
                 </label>
 
                 <textarea
                   id="message"
                   rows="6"
-                  placeholder="Tell us about your requirements..."
+                  placeholder="نیازهای خود را برای ما بنویسید..."
                 ></textarea>
               </div>
 
@@ -144,7 +144,7 @@ function Contact() {
                 type="submit"
                 className="contact-submit"
               >
-                Send Message
+                ارسال پیام
               </button>
 
             </form>

@@ -1,9 +1,11 @@
 .dashboard-page {
   min-height: 100vh;
   padding: 40px;
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #F5EFE6;
+  color: #343A32;
 }
+
+/* Header */
 
 .dashboard-header {
   display: flex;
@@ -14,7 +16,7 @@
 }
 
 .dashboard-label {
-  color: #20c997;
+  color: #637C5C;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -22,12 +24,13 @@
 
 .dashboard-header h1 {
   margin: 8px 0;
+  color: #343A32;
   font-size: 34px;
 }
 
 .dashboard-header p {
   margin: 0;
-  color: #91a4b5;
+  color: #73796F;
 }
 
 .dashboard-user {
@@ -38,58 +41,60 @@
 }
 
 .dashboard-user span {
-  color: #91a4b5;
+  color: #73796F;
   font-size: 13px;
 }
 
 .dashboard-user strong {
+  color: #343A32;
   font-size: 15px;
 }
-
 
 /* Summary */
 
 .dashboard-summary {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   margin-bottom: 24px;
 }
 
 .dashboard-card {
   padding: 22px;
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D8CE;
   border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(52, 58, 50, 0.04);
 }
 
 .dashboard-card span {
   display: block;
   margin-bottom: 12px;
-  color: #91a4b5;
+  color: #73796F;
   font-size: 13px;
 }
 
 .dashboard-card strong {
   display: block;
   margin-bottom: 8px;
+  color: #343A32;
   font-size: 28px;
 }
 
 .dashboard-card small {
-  color: #20c997;
+  color: #637C5C;
   font-size: 12px;
 }
-
 
 /* Panels */
 
 .dashboard-panel {
   margin-bottom: 24px;
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D8CE;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 6px 20px rgba(52, 58, 50, 0.04);
 }
 
 .dashboard-panel-header {
@@ -98,38 +103,42 @@
   justify-content: space-between;
   gap: 20px;
   padding: 22px 24px;
-  border-bottom: 1px solid #1c3448;
+  border-bottom: 1px solid #D8D8CE;
 }
 
 .dashboard-panel-header h2 {
   margin: 0 0 5px;
+  color: #343A32;
   font-size: 20px;
 }
 
 .dashboard-panel-header p {
   margin: 0;
-  color: #91a4b5;
+  color: #73796F;
   font-size: 14px;
 }
 
 .dashboard-panel-header a {
-  color: #20c997;
+  color: #637C5C;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
 }
 
+.dashboard-panel-header a:hover {
+  color: #7F9878;
+}
 
 /* Trade Overview */
 
 .trade-overview-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .trade-stat {
   padding: 24px;
-  border-right: 1px solid #1c3448;
+  border-right: 1px solid #D8D8CE;
 }
 
 .trade-stat:last-child {
@@ -139,14 +148,14 @@
 .trade-stat span {
   display: block;
   margin-bottom: 10px;
-  color: #91a4b5;
+  color: #73796F;
   font-size: 13px;
 }
 
 .trade-stat strong {
+  color: #343A32;
   font-size: 24px;
 }
-
 
 /* Table */
 
@@ -164,18 +173,32 @@
 .dashboard-table td {
   padding: 16px 18px;
   text-align: left;
-  border-bottom: 1px solid #1c3448;
+  border-bottom: 1px solid #D8D8CE;
 }
 
 .dashboard-table th {
-  color: #91a4b5;
+  background-color: #F5EFE6;
+  color: #73796F;
   font-size: 13px;
+  font-weight: 600;
 }
 
 .dashboard-table td {
+  color: #343A32;
   font-size: 14px;
 }
 
+.dashboard-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: #FAF9F5;
+}
+
+.dashboard-table tbody tr:last-child td {
+  border-bottom: none;
+}
 
 /* Status */
 
@@ -185,68 +208,76 @@
   border-radius: 5px;
   font-size: 12px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .dashboard-status.active {
-  background-color: #123d35;
-  color: #20c997;
+  background-color: #E4EDE1;
+  color: #496443;
 }
 
 .dashboard-status.pending {
-  background-color: #40371b;
-  color: #e6c95c;
+  background-color: #F4EBD1;
+  color: #80651D;
 }
 
 .dashboard-status.completed {
-  background-color: #24333f;
-  color: #9fb3c2;
+  background-color: #E9EAE5;
+  color: #62695E;
 }
-
 
 /* Operations */
 
 .operations-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 16px;
   padding: 24px;
 }
 
 .operation-card {
   padding: 20px;
-  background-color: #07131f;
-  border: 1px solid #1c3448;
+  background-color: #FAF9F5;
+  border: 1px solid #D8D8CE;
   border-radius: 8px;
-  color: #ffffff;
+  color: #343A32;
   text-decoration: none;
   transition:
     border-color 0.2s ease,
-    transform 0.2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .operation-card:hover {
-  border-color: #20c997;
+  border-color: #91A88A;
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(52, 58, 50, 0.06);
 }
 
 .operation-card span {
   display: block;
   margin-bottom: 10px;
-  color: #91a4b5;
+  color: #73796F;
   font-size: 13px;
 }
 
 .operation-card strong {
   display: block;
   margin-bottom: 6px;
+  color: #343A32;
   font-size: 24px;
 }
 
 .operation-card small {
-  color: #91a4b5;
+  color: #73796F;
   font-size: 12px;
 }
 
+.operation-card:focus-visible,
+.quick-action:focus-visible {
+  outline: 2px solid #637C5C;
+  outline-offset: 3px;
+}
 
 /* Quick Actions */
 
@@ -259,30 +290,34 @@
 
 .quick-action {
   padding: 12px 18px;
-  border: 1px solid #1c3448;
+  border: 1px solid #D8D8CE;
   border-radius: 6px;
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #FAF9F5;
+  color: #343A32;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .quick-action:hover {
-  border-color: #20c997;
-  color: #20c997;
+  border-color: #91A88A;
+  background-color: #E8EEE5;
+  color: #496443;
 }
-
 
 /* Responsive */
 
 @media (max-width: 1100px) {
   .dashboard-summary {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .operations-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -305,20 +340,65 @@
   }
 
   .trade-overview-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .trade-stat {
     border-right: none;
-    border-bottom: 1px solid #1c3448;
+    border-bottom: 1px solid #D8D8CE;
+  }
+
+  .trade-stat:nth-child(odd) {
+    border-right: 1px solid #D8D8CE;
+  }
+
+  .trade-stat:nth-last-child(-n + 2) {
+    border-bottom: none;
   }
 
   .operations-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .dashboard-panel-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard-header h1 {
+    font-size: 28px;
+  }
+
+  .dashboard-panel-header {
+    padding: 20px;
+  }
+
+  .operations-grid {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .quick-actions {
+    padding: 18px;
+  }
+
+  .quick-action {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-table tbody tr,
+  .operation-card,
+  .quick-action {
+    transition: none;
+  }
+
+  .operation-card:hover {
+    transform: none;
   }
 }

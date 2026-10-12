@@ -7,13 +7,13 @@ function Profile() {
       <header className="profile-header">
         <div>
           <span className="profile-label">
-            ACCOUNT
+            حساب کاربری
           </span>
 
-          <h1>My Profile</h1>
+          <h1>پروفایل من</h1>
 
           <p>
-            Manage your personal information and account settings.
+            مدیریت اطلاعات شخصی و تنظیمات حساب کاربری.
           </p>
         </div>
       </header>
@@ -21,7 +21,7 @@ function Profile() {
 
       <section className="profile-container">
 
-        {/* Profile Header */}
+        {/* سربرگ پروفایل */}
 
         <div className="profile-card profile-main">
 
@@ -37,28 +37,28 @@ function Profile() {
             </p>
 
             <span className="profile-role">
-              Administrator
+              مدیر سیستم
             </span>
           </div>
 
         </div>
 
 
-        {/* Personal Information */}
+        {/* اطلاعات شخصی */}
 
         <section className="profile-card">
 
           <div className="profile-card-header">
             <div>
-              <h2>Personal Information</h2>
+              <h2>اطلاعات شخصی</h2>
 
               <p>
-                Your basic account information.
+                اطلاعات پایه حساب کاربری شما.
               </p>
             </div>
 
             <button className="profile-button">
-              Edit Profile
+              ویرایش پروفایل
             </button>
           </div>
 
@@ -66,33 +66,33 @@ function Profile() {
           <div className="profile-info-grid">
 
             <div className="profile-info-item">
-              <span>First Name</span>
+              <span>نام</span>
               <strong>Admin</strong>
             </div>
 
             <div className="profile-info-item">
-              <span>Last Name</span>
+              <span>نام خانوادگی</span>
               <strong>User</strong>
             </div>
 
             <div className="profile-info-item">
-              <span>Email</span>
+              <span>ایمیل</span>
               <strong>admin@pistatrade.com</strong>
             </div>
 
             <div className="profile-info-item">
-              <span>Phone</span>
+              <span>تلفن</span>
               <strong>+1 000 000 0000</strong>
             </div>
 
             <div className="profile-info-item">
-              <span>Company</span>
+              <span>شرکت</span>
               <strong>PistaTrade</strong>
             </div>
 
             <div className="profile-info-item">
-              <span>Role</span>
-              <strong>Administrator</strong>
+              <span>نقش</span>
+              <strong>مدیر سیستم</strong>
             </div>
 
           </div>
@@ -100,17 +100,17 @@ function Profile() {
         </section>
 
 
-        {/* Account Information */}
+        {/* اطلاعات حساب */}
 
         <section className="profile-card">
 
           <div className="profile-card-header">
 
             <div>
-              <h2>Account Information</h2>
+              <h2>اطلاعات حساب</h2>
 
               <p>
-                Account and access details.
+                جزئیات حساب کاربری و دسترسی.
               </p>
             </div>
 
@@ -120,26 +120,26 @@ function Profile() {
           <div className="profile-info-grid">
 
             <div className="profile-info-item">
-              <span>Username</span>
+              <span>نام کاربری</span>
               <strong>admin</strong>
             </div>
 
             <div className="profile-info-item">
-              <span>Account Status</span>
+              <span>وضعیت حساب</span>
 
               <strong className="profile-status active">
-                Active
+                فعال
               </strong>
             </div>
 
             <div className="profile-info-item">
-              <span>Department</span>
-              <strong>Management</strong>
+              <span>واحد</span>
+              <strong>مدیریت</strong>
             </div>
 
             <div className="profile-info-item">
-              <span>Joined</span>
-              <strong>September 2026</strong>
+              <span>تاریخ عضویت</span>
+              <strong>سپتامبر 2026</strong>
             </div>
 
           </div>
@@ -147,22 +147,22 @@ function Profile() {
         </section>
 
 
-        {/* Security */}
+        {/* امنیت */}
 
         <section className="profile-card">
 
           <div className="profile-card-header">
 
             <div>
-              <h2>Security</h2>
+              <h2>امنیت</h2>
 
               <p>
-                Manage your password and account security.
+                مدیریت رمز عبور و امنیت حساب کاربری.
               </p>
             </div>
 
             <button className="profile-button">
-              Change Password
+              تغییر رمز عبور
             </button>
 
           </div>

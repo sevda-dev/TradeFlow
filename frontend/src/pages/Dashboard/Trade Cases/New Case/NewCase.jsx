@@ -7,15 +7,15 @@ function NewCase() {
       <header className="new-case-header">
         <div>
           <span className="new-case-label">
-            TRADE CASES
+            پرونده‌های تجاری
           </span>
 
           <h1>
-            New Trade Case
+            پرونده تجاری جدید
           </h1>
 
           <p>
-            Create a new commercial trade case.
+            ایجاد یک پرونده تجاری جدید.
           </p>
         </div>
       </header>
@@ -23,36 +23,36 @@ function NewCase() {
 
       <form className="new-case-form">
 
-        {/* Basic Information */}
+        {/* اطلاعات پایه */}
 
         <section className="new-case-section">
 
           <div className="section-header">
-            <h2>Basic Information</h2>
-            <p>Define the main information of the trade case.</p>
+            <h2>اطلاعات پایه</h2>
+            <p>اطلاعات اصلی پرونده تجاری را مشخص کنید.</p>
           </div>
 
           <div className="form-grid">
 
             <div className="form-group">
-              <label>Case Type</label>
+              <label>نوع پرونده</label>
 
               <select defaultValue="">
                 <option value="" disabled>
-                  Select case type
+                  نوع پرونده را انتخاب کنید
                 </option>
-                <option value="sale">Sale</option>
-                <option value="purchase">Purchase</option>
+                <option value="sale">فروش</option>
+                <option value="purchase">خرید</option>
               </select>
             </div>
 
 
             <div className="form-group">
-              <label>Product</label>
+              <label>محصول</label>
 
               <select defaultValue="">
                 <option value="" disabled>
-                  Select product
+                  محصول را انتخاب کنید
                 </option>
                 <option value="akbari">Akbari</option>
                 <option value="ahmad-aghaei">Ahmad Aghaei</option>
@@ -63,11 +63,11 @@ function NewCase() {
 
 
             <div className="form-group">
-              <label>Customer</label>
+              <label>مشتری</label>
 
               <select defaultValue="">
                 <option value="" disabled>
-                  Select customer
+                  مشتری را انتخاب کنید
                 </option>
                 <option value="global-foods">
                   Global Foods Ltd.
@@ -83,11 +83,11 @@ function NewCase() {
 
 
             <div className="form-group">
-              <label>Supplier</label>
+              <label>تأمین‌کننده</label>
 
               <select defaultValue="">
                 <option value="" disabled>
-                  Select supplier
+                  تأمین‌کننده را انتخاب کنید
                 </option>
                 <option value="kerman">
                   Kerman Pistachio Co.
@@ -106,53 +106,53 @@ function NewCase() {
         </section>
 
 
-        {/* Quantity & Destination */}
+        {/* مقدار و مقصد */}
 
         <section className="new-case-section">
 
           <div className="section-header">
-            <h2>Quantity & Destination</h2>
-            <p>Define the commercial quantity and destination.</p>
+            <h2>مقدار و مقصد</h2>
+            <p>مقدار تجاری و مقصد را مشخص کنید.</p>
           </div>
 
           <div className="form-grid">
 
             <div className="form-group">
-              <label>Total Quantity</label>
+              <label>مقدار کل</label>
 
               <input
                 type="number"
-                placeholder="Enter quantity"
+                placeholder="مقدار را وارد کنید"
               />
             </div>
 
 
             <div className="form-group">
-              <label>Unit</label>
+              <label>واحد</label>
 
               <select defaultValue="ton">
-                <option value="ton">Ton</option>
-                <option value="kg">Kilogram</option>
+                <option value="ton">تن</option>
+                <option value="kg">کیلوگرم</option>
               </select>
             </div>
 
 
             <div className="form-group">
-              <label>Destination Country</label>
+              <label>کشور مقصد</label>
 
               <input
                 type="text"
-                placeholder="e.g. UAE"
+                placeholder="مثلاً UAE"
               />
             </div>
 
 
             <div className="form-group">
-              <label>Destination City</label>
+              <label>شهر مقصد</label>
 
               <input
                 type="text"
-                placeholder="e.g. Dubai"
+                placeholder="مثلاً Dubai"
               />
             </div>
 
@@ -161,33 +161,33 @@ function NewCase() {
         </section>
 
 
-        {/* Commercial Information */}
+        {/* اطلاعات تجاری */}
 
         <section className="new-case-section">
 
           <div className="section-header">
-            <h2>Commercial Information</h2>
-            <p>Enter pricing and payment information.</p>
+            <h2>اطلاعات تجاری</h2>
+            <p>اطلاعات قیمت‌گذاری و پرداخت را وارد کنید.</p>
           </div>
 
           <div className="form-grid">
 
             <div className="form-group">
-              <label>Price</label>
+              <label>قیمت</label>
 
               <input
                 type="number"
-                placeholder="Enter price"
+                placeholder="قیمت را وارد کنید"
               />
             </div>
 
 
             <div className="form-group">
-              <label>Currency</label>
+              <label>ارز</label>
 
               <select defaultValue="">
                 <option value="" disabled>
-                  Select currency
+                  ارز را انتخاب کنید
                 </option>
                 <option value="usd">USD</option>
                 <option value="eur">EUR</option>
@@ -197,29 +197,29 @@ function NewCase() {
 
 
             <div className="form-group">
-              <label>Payment Terms</label>
+              <label>شرایط پرداخت</label>
 
               <select defaultValue="">
                 <option value="" disabled>
-                  Select payment terms
+                  شرایط پرداخت را انتخاب کنید
                 </option>
-                <option value="advance">Advance Payment</option>
+                <option value="advance">پرداخت پیش‌پرداخت</option>
                 <option value="partial">
-                  Partial Payment
+                  پرداخت جزئی
                 </option>
                 <option value="after-delivery">
-                  After Delivery
+                  پس از تحویل
                 </option>
               </select>
             </div>
 
 
             <div className="form-group">
-              <label>Packaging</label>
+              <label>بسته‌بندی</label>
 
               <input
                 type="text"
-                placeholder="e.g. 25kg bags"
+                placeholder="مثلاً کیسه‌های 25 کیلویی"
               />
             </div>
 
@@ -228,19 +228,19 @@ function NewCase() {
         </section>
 
 
-        {/* Notes */}
+        {/* یادداشت‌ها */}
 
         <section className="new-case-section">
 
           <div className="section-header">
-            <h2>Notes</h2>
+            <h2>یادداشت‌ها</h2>
           </div>
 
           <div className="form-group">
 
             <textarea
               rows="5"
-              placeholder="Add any additional information..."
+              placeholder="اطلاعات تکمیلی را وارد کنید..."
             />
 
           </div>
@@ -248,7 +248,7 @@ function NewCase() {
         </section>
 
 
-        {/* Actions */}
+        {/* عملیات */}
 
         <div className="new-case-actions">
 
@@ -256,14 +256,14 @@ function NewCase() {
             href="/dashboard/trade-cases"
             className="cancel-button"
           >
-            Cancel
+            لغو
           </a>
 
           <button
             type="submit"
             className="save-case-button"
           >
-            Create Trade Case
+            ایجاد پرونده تجاری
           </button>
 
         </div>

@@ -1,6 +1,6 @@
 .quote-page {
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #343A32;
+  color: #F5EFE6;
   min-height: 100vh;
 }
 
@@ -8,8 +8,8 @@
 
 .quote-hero {
   padding: 90px 24px 70px;
-  background-color: #0b1726;
-  border-bottom: 1px solid #1c3448;
+  background-color: #41483E;
+  border-bottom: 1px solid #596352;
 }
 
 .quote-container {
@@ -18,7 +18,7 @@
 }
 
 .quote-label {
-  color: #20c997;
+  color: #A9BEA2;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -33,7 +33,7 @@
 .quote-hero p {
   max-width: 650px;
   margin: 0;
-  color: #aebdca;
+  color: #D0D2C9;
   font-size: 17px;
   line-height: 1.7;
 }
@@ -42,21 +42,25 @@
 
 .quote-section {
   padding: 80px 24px;
+  background-color: #F5EFE6;
+  color: #343A32;
 }
 
 .quote-form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   padding: 40px;
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D8CE;
   border-radius: 10px;
+  box-shadow: 0 12px 35px rgba(52, 58, 50, 0.08);
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .form-full {
@@ -65,7 +69,7 @@
 
 .form-group label {
   margin-bottom: 9px;
-  color: #ffffff;
+  color: #343A32;
   font-size: 14px;
   font-weight: 600;
 }
@@ -74,26 +78,30 @@
 .form-group select,
 .form-group textarea {
   width: 100%;
+  box-sizing: border-box;
   padding: 13px 14px;
-  border: 1px solid #294257;
+  border: 1px solid #D8D8CE;
   border-radius: 6px;
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #FAF9F5;
+  color: #343A32;
   font-family: inherit;
   font-size: 14px;
   outline: none;
-  transition: border-color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #718394;
+  color: #92968B;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #20c997;
+  border-color: #91A88A;
+  box-shadow: 0 0 0 3px rgba(145, 168, 138, 0.2);
 }
 
 .form-group select {
@@ -112,8 +120,8 @@
   padding: 14px 20px;
   border: none;
   border-radius: 6px;
-  background-color: #20c997;
-  color: #07131f;
+  background-color: #91A88A;
+  color: #343A32;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
@@ -123,8 +131,19 @@
 }
 
 .quote-submit:hover {
-  background-color: #2dd4a3;
+  background-color: #7F9878;
   transform: translateY(-1px);
+}
+
+.quote-submit:focus-visible {
+  outline: 2px solid #637C5C;
+  outline-offset: 3px;
+}
+
+.quote-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
 }
 
 /* Responsive */
@@ -159,5 +178,18 @@
 
   .quote-form {
     padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-group input,
+  .form-group select,
+  .form-group textarea,
+  .quote-submit {
+    transition: none;
+  }
+
+  .quote-submit:hover {
+    transform: none;
   }
 }

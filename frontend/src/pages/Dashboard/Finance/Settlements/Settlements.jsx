@@ -7,40 +7,40 @@ function Settlements() {
       <header className="settlements-header">
         <div>
           <span className="settlements-label">
-            FINANCE
+            امور مالی
           </span>
 
-          <h1>Settlements</h1>
+          <h1>تسویه‌حساب‌ها</h1>
 
           <p>
-            Manage final financial settlements of trade cases.
+            مدیریت تسویه‌حساب‌های نهایی مالی پرونده‌های تجاری.
           </p>
         </div>
 
         <button className="settlements-button">
-          New Settlement
+          تسویه‌حساب جدید
         </button>
       </header>
 
       <section className="settlements-summary">
 
         <div className="settlement-summary-card">
-          <span>Total Settlements</span>
+          <span>مجموع تسویه‌حساب‌ها</span>
           <strong>28</strong>
         </div>
 
         <div className="settlement-summary-card">
-          <span>Pending</span>
+          <span>در انتظار</span>
           <strong>8</strong>
         </div>
 
         <div className="settlement-summary-card">
-          <span>Completed</span>
+          <span>تکمیل‌شده</span>
           <strong>20</strong>
         </div>
 
         <div className="settlement-summary-card">
-          <span>Remaining Balance</span>
+          <span>مانده حساب</span>
           <strong>$170,000</strong>
         </div>
 
@@ -51,17 +51,17 @@ function Settlements() {
         <div className="settlements-panel-header">
 
           <div>
-            <h2>Trade Case Settlements</h2>
+            <h2>تسویه‌حساب پرونده‌های تجاری</h2>
 
             <p>
-              Review final balances and settlement status.
+              مانده نهایی و وضعیت تسویه‌حساب‌ها را بررسی کنید.
             </p>
           </div>
 
           <select defaultValue="all">
-            <option value="all">All Status</option>
-            <option value="pending">Pending</option>
-            <option value="completed">Completed</option>
+            <option value="all">همه وضعیت‌ها</option>
+            <option value="pending">در انتظار</option>
+            <option value="completed">تکمیل‌شده</option>
           </select>
 
         </div>
@@ -72,13 +72,13 @@ function Settlements() {
 
             <thead>
               <tr>
-                <th>Settlement</th>
-                <th>Trade Case</th>
-                <th>Total Value</th>
-                <th>Paid</th>
-                <th>Remaining</th>
-                <th>Settlement Date</th>
-                <th>Status</th>
+                <th>تسویه‌حساب</th>
+                <th>پرونده تجاری</th>
+                <th>ارزش کل</th>
+                <th>پرداخت‌شده</th>
+                <th>مانده</th>
+                <th>تاریخ تسویه</th>
+                <th>وضعیت</th>
               </tr>
             </thead>
 
@@ -93,7 +93,7 @@ function Settlements() {
                 <td>—</td>
                 <td>
                   <span className="settlement-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
               </tr>
@@ -104,10 +104,10 @@ function Settlements() {
                 <td>$170,000</td>
                 <td>$170,000</td>
                 <td>$0</td>
-                <td>Sep 18, 2026</td>
+                <td>18 سپتامبر 2026</td>
                 <td>
                   <span className="settlement-status completed">
-                    Completed
+                    تکمیل‌شده
                   </span>
                 </td>
               </tr>
@@ -118,10 +118,10 @@ function Settlements() {
                 <td>$255,000</td>
                 <td>$255,000</td>
                 <td>$0</td>
-                <td>Sep 15, 2026</td>
+                <td>15 سپتامبر 2026</td>
                 <td>
                   <span className="settlement-status completed">
-                    Completed
+                    تکمیل‌شده
                   </span>
                 </td>
               </tr>
@@ -135,7 +135,7 @@ function Settlements() {
                 <td>—</td>
                 <td>
                   <span className="settlement-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
               </tr>

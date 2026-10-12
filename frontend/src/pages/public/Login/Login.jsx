@@ -12,10 +12,10 @@ function Login() {
             PISTATRADE
           </span>
 
-          <h1>Sign In</h1>
+          <h1>ورود</h1>
 
           <p>
-            Sign in to access your account.
+            برای دسترسی به حساب کاربری خود وارد شوید.
           </p>
         </div>
 
@@ -24,26 +24,26 @@ function Login() {
 
           <div className="login-form-group">
             <label htmlFor="email">
-              Email Address
+              آدرس ایمیل
             </label>
 
             <input
               id="email"
               type="email"
-              placeholder="Enter your email"
+              placeholder="ایمیل خود را وارد کنید"
             />
           </div>
 
 
           <div className="login-form-group">
             <label htmlFor="password">
-              Password
+              رمز عبور
             </label>
 
             <input
               id="password"
               type="password"
-              placeholder="Enter your password"
+              placeholder="رمز عبور خود را وارد کنید"
             />
           </div>
 
@@ -56,12 +56,12 @@ function Login() {
               />
 
               <span>
-                Remember me
+                مرا به خاطر بسپار
               </span>
             </label>
 
             <a href="/forgot-password">
-              Forgot password?
+              رمز عبور را فراموش کرده‌اید؟
             </a>
 
           </div>
@@ -71,7 +71,7 @@ function Login() {
             type="submit"
             className="login-button"
           >
-            Sign In
+            ورود
           </button>
 
         </form>
@@ -80,11 +80,11 @@ function Login() {
         <div className="login-footer">
 
           <span>
-            Don't have an account?
+            حساب کاربری ندارید؟
           </span>
 
           <Link to="/register">
-            Create an account
+            ایجاد حساب کاربری
           </Link>
 
         </div>

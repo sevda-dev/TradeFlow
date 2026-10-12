@@ -10,13 +10,13 @@ function CaseDetails() {
       <header className="case-details-header">
         <div>
           <span className="case-details-label">
-            TRADE CASE
+            پرونده تجاری
           </span>
 
           <h1>{caseId}</h1>
 
           <p>
-            View and manage the details of this commercial trade case.
+            مشاهده و مدیریت جزئیات این پرونده تجاری.
           </p>
         </div>
 
@@ -24,57 +24,57 @@ function CaseDetails() {
           to="/dashboard/trade-cases"
           className="back-button"
         >
-          Back to Cases
+          بازگشت به پرونده‌ها
         </Link>
       </header>
 
 
-      {/* Case Summary */}
+      {/* خلاصه پرونده */}
 
       <section className="case-section">
 
         <div className="section-header">
           <div>
-            <h2>Case Summary</h2>
+            <h2>خلاصه پرونده</h2>
             <p>
-              Main information about this trade case.
+              اطلاعات اصلی این پرونده تجاری.
             </p>
           </div>
 
           <span className="case-status active">
-            In Progress
+            در حال انجام
           </span>
         </div>
 
         <div className="info-grid">
 
           <div className="info-item">
-            <span>Case Type</span>
-            <strong>Sale</strong>
+            <span>نوع پرونده</span>
+            <strong>فروش</strong>
           </div>
 
           <div className="info-item">
-            <span>Product</span>
+            <span>محصول</span>
             <strong>Akbari</strong>
           </div>
 
           <div className="info-item">
-            <span>Customer</span>
+            <span>مشتری</span>
             <strong>Global Foods Ltd.</strong>
           </div>
 
           <div className="info-item">
-            <span>Supplier</span>
+            <span>تأمین‌کننده</span>
             <strong>Kerman Pistachio Co.</strong>
           </div>
 
           <div className="info-item">
-            <span>Total Quantity</span>
-            <strong>40 Tons</strong>
+            <span>مقدار کل</span>
+            <strong>40 تن</strong>
           </div>
 
           <div className="info-item">
-            <span>Destination</span>
+            <span>مقصد</span>
             <strong>Dubai, UAE</strong>
           </div>
 
@@ -83,15 +83,15 @@ function CaseDetails() {
       </section>
 
 
-      {/* Commercial Information */}
+      {/* اطلاعات تجاری */}
 
       <section className="case-section">
 
         <div className="section-header">
           <div>
-            <h2>Commercial Information</h2>
+            <h2>اطلاعات تجاری</h2>
             <p>
-              Pricing and payment information.
+              اطلاعات قیمت‌گذاری و پرداخت.
             </p>
           </div>
         </div>
@@ -99,23 +99,23 @@ function CaseDetails() {
         <div className="info-grid">
 
           <div className="info-item">
-            <span>Price</span>
-            <strong>$8,500 / Ton</strong>
+            <span>قیمت</span>
+            <strong>$8,500 / تن</strong>
           </div>
 
           <div className="info-item">
-            <span>Currency</span>
+            <span>ارز</span>
             <strong>USD</strong>
           </div>
 
           <div className="info-item">
-            <span>Payment Terms</span>
-            <strong>Partial Payment</strong>
+            <span>شرایط پرداخت</span>
+            <strong>پرداخت جزئی</strong>
           </div>
 
           <div className="info-item">
-            <span>Packaging</span>
-            <strong>25kg Bags</strong>
+            <span>بسته‌بندی</span>
+            <strong>کیسه‌های 25 کیلویی</strong>
           </div>
 
         </div>
@@ -123,20 +123,20 @@ function CaseDetails() {
       </section>
 
 
-      {/* Shipments */}
+      {/* محموله‌ها */}
 
       <section className="case-section">
 
         <div className="section-header">
           <div>
-            <h2>Shipments</h2>
+            <h2>محموله‌ها</h2>
             <p>
-              Physical shipments related to this trade case.
+              محموله‌های فیزیکی مرتبط با این پرونده تجاری.
             </p>
           </div>
 
           <span className="section-count">
-            2 Shipments
+            2 محموله
           </span>
         </div>
 
@@ -146,12 +146,12 @@ function CaseDetails() {
 
             <thead>
               <tr>
-                <th>Shipment</th>
-                <th>Quantity</th>
-                <th>Driver</th>
-                <th>Vehicle</th>
-                <th>Destination</th>
-                <th>Status</th>
+                <th>محموله</th>
+                <th>مقدار</th>
+                <th>راننده</th>
+                <th>وسیله نقلیه</th>
+                <th>مقصد</th>
+                <th>وضعیت</th>
               </tr>
             </thead>
 
@@ -159,26 +159,26 @@ function CaseDetails() {
 
               <tr>
                 <td>SH-001</td>
-                <td>20 Tons</td>
+                <td>20 تن</td>
                 <td>Ali Rezaei</td>
                 <td>12A-34567</td>
                 <td>Dubai</td>
                 <td>
                   <span className="shipment-status active">
-                    In Transit
+                    در حال حمل
                   </span>
                 </td>
               </tr>
 
               <tr>
                 <td>SH-002</td>
-                <td>20 Tons</td>
+                <td>20 تن</td>
                 <td>Hossein Karimi</td>
                 <td>45B-67890</td>
                 <td>Dubai</td>
                 <td>
                   <span className="shipment-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
               </tr>
@@ -192,15 +192,15 @@ function CaseDetails() {
       </section>
 
 
-      {/* Financial Information */}
+      {/* اطلاعات مالی */}
 
       <section className="case-section">
 
         <div className="section-header">
           <div>
-            <h2>Financial Information</h2>
+            <h2>اطلاعات مالی</h2>
             <p>
-              Payments and financial status of this case.
+              پرداخت‌ها و وضعیت مالی این پرونده.
             </p>
           </div>
         </div>
@@ -208,17 +208,17 @@ function CaseDetails() {
         <div className="financial-grid">
 
           <div className="financial-card">
-            <span>Total Value</span>
+            <span>ارزش کل</span>
             <strong>$340,000</strong>
           </div>
 
           <div className="financial-card">
-            <span>Paid</span>
+            <span>پرداخت‌شده</span>
             <strong>$170,000</strong>
           </div>
 
           <div className="financial-card">
-            <span>Remaining</span>
+            <span>مانده</span>
             <strong>$170,000</strong>
           </div>
 
@@ -227,15 +227,15 @@ function CaseDetails() {
       </section>
 
 
-      {/* Documents */}
+      {/* اسناد */}
 
       <section className="case-section">
 
         <div className="section-header">
           <div>
-            <h2>Documents</h2>
+            <h2>اسناد</h2>
             <p>
-              Documents related to this trade case.
+              اسناد مرتبط با این پرونده تجاری.
             </p>
           </div>
         </div>
@@ -244,34 +244,34 @@ function CaseDetails() {
 
           <div className="document-item">
             <div>
-              <strong>Commercial Invoice</strong>
+              <strong>فاکتور تجاری</strong>
               <span>Invoice_TR-001.pdf</span>
             </div>
 
             <a href="#">
-              View
+              مشاهده
             </a>
           </div>
 
           <div className="document-item">
             <div>
-              <strong>Packing List</strong>
+              <strong>لیست بسته‌بندی</strong>
               <span>PackingList_TR-001.pdf</span>
             </div>
 
             <a href="#">
-              View
+              مشاهده
             </a>
           </div>
 
           <div className="document-item">
             <div>
-              <strong>Bill of Lading</strong>
+              <strong>بارنامه</strong>
               <span>BL_TR-001.pdf</span>
             </div>
 
             <a href="#">
-              View
+              مشاهده
             </a>
           </div>
 
@@ -280,19 +280,19 @@ function CaseDetails() {
       </section>
 
 
-      {/* Notes */}
+      {/* یادداشت‌ها */}
 
       <section className="case-section">
 
         <div className="section-header">
           <div>
-            <h2>Notes</h2>
+            <h2>یادداشت‌ها</h2>
           </div>
         </div>
 
         <p className="case-notes">
-          Shipment is currently being prepared for export.
-          Customs clearance is expected to start after loading.
+          محموله در حال حاضر برای صادرات آماده می‌شود.
+          انتظار می‌رود فرآیند ترخیص گمرکی پس از بارگیری آغاز شود.
         </p>
 
       </section>
@@ -304,11 +304,11 @@ function CaseDetails() {
           to="/dashboard/trade-cases"
           className="secondary-button"
         >
-          Back to Cases
+          بازگشت به پرونده‌ها
         </Link>
 
         <button className="primary-button">
-          Edit Case
+          ویرایش پرونده
         </button>
 
       </div>

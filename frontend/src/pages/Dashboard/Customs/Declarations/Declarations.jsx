@@ -7,40 +7,40 @@ function Declarations() {
       <header className="declarations-header">
         <div>
           <span className="declarations-label">
-            CUSTOMS
+            گمرک
           </span>
 
-          <h1>Declarations</h1>
+          <h1>اظهارنامه‌ها</h1>
 
           <p>
-            Create and manage customs declarations for trade shipments.
+            ایجاد و مدیریت اظهارنامه‌های گمرکی برای محموله‌های تجاری.
           </p>
         </div>
 
         <button className="declarations-button">
-          New Declaration
+          اظهارنامه جدید
         </button>
       </header>
 
       <section className="declarations-summary">
 
         <div className="declaration-summary-card">
-          <span>Total Declarations</span>
+          <span>مجموع اظهارنامه‌ها</span>
           <strong>35</strong>
         </div>
 
         <div className="declaration-summary-card">
-          <span>Draft</span>
+          <span>پیش‌نویس</span>
           <strong>6</strong>
         </div>
 
         <div className="declaration-summary-card">
-          <span>Submitted</span>
+          <span>ارسال‌شده</span>
           <strong>14</strong>
         </div>
 
         <div className="declaration-summary-card">
-          <span>Cleared</span>
+          <span>ترخیص‌شده</span>
           <strong>15</strong>
         </div>
 
@@ -51,10 +51,10 @@ function Declarations() {
         <div className="declarations-panel-header">
 
           <div>
-            <h2>Customs Declarations</h2>
+            <h2>اظهارنامه‌های گمرکی</h2>
 
             <p>
-              Track all customs declarations related to trade cases.
+              تمام اظهارنامه‌های گمرکی مرتبط با پرونده‌های تجاری را پیگیری کنید.
             </p>
           </div>
 
@@ -62,14 +62,14 @@ function Declarations() {
 
             <input
               type="text"
-              placeholder="Search declarations..."
+              placeholder="جستجوی اظهارنامه‌ها..."
             />
 
             <select defaultValue="all">
-              <option value="all">All Status</option>
-              <option value="draft">Draft</option>
-              <option value="submitted">Submitted</option>
-              <option value="cleared">Cleared</option>
+              <option value="all">همه وضعیت‌ها</option>
+              <option value="draft">پیش‌نویس</option>
+              <option value="submitted">ارسال‌شده</option>
+              <option value="cleared">ترخیص‌شده</option>
             </select>
 
           </div>
@@ -82,13 +82,13 @@ function Declarations() {
 
             <thead>
               <tr>
-                <th>Declaration</th>
-                <th>Trade Case</th>
-                <th>Shipment</th>
-                <th>Product</th>
-                <th>Destination</th>
-                <th>Broker</th>
-                <th>Status</th>
+                <th>اظهارنامه</th>
+                <th>پرونده تجاری</th>
+                <th>محموله</th>
+                <th>محصول</th>
+                <th>مقصد</th>
+                <th>کارگزار</th>
+                <th>وضعیت</th>
               </tr>
             </thead>
 
@@ -103,7 +103,7 @@ function Declarations() {
                 <td>Global Customs Co.</td>
                 <td>
                   <span className="declaration-status submitted">
-                    Submitted
+                    ارسال‌شده
                   </span>
                 </td>
               </tr>
@@ -117,7 +117,7 @@ function Declarations() {
                 <td>Persian Customs Services</td>
                 <td>
                   <span className="declaration-status draft">
-                    Draft
+                    پیش‌نویس
                   </span>
                 </td>
               </tr>
@@ -131,7 +131,7 @@ function Declarations() {
                 <td>Global Customs Co.</td>
                 <td>
                   <span className="declaration-status cleared">
-                    Cleared
+                    ترخیص‌شده
                   </span>
                 </td>
               </tr>
@@ -145,7 +145,7 @@ function Declarations() {
                 <td>Iran Customs Group</td>
                 <td>
                   <span className="declaration-status submitted">
-                    Submitted
+                    ارسال‌شده
                   </span>
                 </td>
               </tr>

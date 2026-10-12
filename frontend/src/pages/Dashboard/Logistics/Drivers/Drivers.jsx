@@ -7,40 +7,40 @@ function Drivers() {
       <header className="drivers-header">
         <div>
           <span className="drivers-label">
-            LOGISTICS
+            لجستیک
           </span>
 
-          <h1>Drivers</h1>
+          <h1>رانندگان</h1>
 
           <p>
-            Manage drivers and their transportation assignments.
+            مدیریت رانندگان و مأموریت‌های حمل‌ونقل آن‌ها.
           </p>
         </div>
 
         <button className="drivers-button">
-          Add Driver
+          افزودن راننده
         </button>
       </header>
 
       <section className="drivers-summary">
 
         <div className="driver-summary-card">
-          <span>Total Drivers</span>
+          <span>مجموع رانندگان</span>
           <strong>32</strong>
         </div>
 
         <div className="driver-summary-card">
-          <span>Available</span>
+          <span>در دسترس</span>
           <strong>18</strong>
         </div>
 
         <div className="driver-summary-card">
-          <span>On Shipment</span>
+          <span>در حال حمل</span>
           <strong>12</strong>
         </div>
 
         <div className="driver-summary-card">
-          <span>Inactive</span>
+          <span>غیرفعال</span>
           <strong>2</strong>
         </div>
 
@@ -49,11 +49,11 @@ function Drivers() {
       <section className="drivers-panel">
 
         <div className="drivers-panel-header">
-          <h2>Driver List</h2>
+          <h2>فهرست رانندگان</h2>
 
           <input
             type="text"
-            placeholder="Search drivers..."
+            placeholder="جستجوی رانندگان..."
           />
         </div>
 
@@ -63,12 +63,12 @@ function Drivers() {
 
             <thead>
               <tr>
-                <th>Driver</th>
-                <th>Phone</th>
-                <th>License</th>
-                <th>Vehicle</th>
-                <th>Current Shipment</th>
-                <th>Status</th>
+                <th>راننده</th>
+                <th>تلفن</th>
+                <th>گواهینامه</th>
+                <th>وسیله نقلیه</th>
+                <th>محموله فعلی</th>
+                <th>وضعیت</th>
               </tr>
             </thead>
 
@@ -82,7 +82,7 @@ function Drivers() {
                 <td>SH-001</td>
                 <td>
                   <span className="driver-status active">
-                    On Shipment
+                    در حال حمل
                   </span>
                 </td>
               </tr>
@@ -95,7 +95,7 @@ function Drivers() {
                 <td>SH-002</td>
                 <td>
                   <span className="driver-status pending">
-                    Assigned
+                    اختصاص داده‌شده
                   </span>
                 </td>
               </tr>
@@ -108,7 +108,7 @@ function Drivers() {
                 <td>—</td>
                 <td>
                   <span className="driver-status available">
-                    Available
+                    در دسترس
                   </span>
                 </td>
               </tr>

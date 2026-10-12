@@ -4,90 +4,90 @@ function ProductDetail() {
   return (
     <main className="product-detail-page">
 
-      {/* Hero */}
+      {/* هیرو */}
       <section className="product-detail-hero">
         <div className="product-detail-container">
 
           <span className="product-detail-label">
-            PREMIUM IRANIAN PISTACHIO
+            پسته ممتاز ایرانی
           </span>
 
           <h1>
-            Akbari Pistachio
+            پسته Akbari
           </h1>
 
           <p>
-            Premium Iranian Akbari pistachios for international buyers.
+            پسته ممتاز ایرانی Akbari برای خریداران بین‌المللی.
           </p>
 
         </div>
       </section>
 
 
-      {/* Product Information */}
+      {/* اطلاعات محصول */}
       <section className="product-detail-section">
         <div className="product-detail-container product-detail-grid">
 
-          {/* Image */}
+          {/* تصویر */}
           <div className="product-detail-image">
             <img
               src="/images/pistachio-akbari.jpg"
-              alt="Akbari Pistachio"
+              alt="پسته Akbari"
             />
           </div>
 
 
-          {/* Information */}
+          {/* اطلاعات */}
           <div className="product-detail-content">
 
             <span className="product-category">
-              Pistachio
+              پسته
             </span>
 
             <h2>
-              Akbari Pistachio
+              پسته Akbari
             </h2>
 
             <p className="product-description">
-              Akbari is one of the premium Iranian pistachio
-              varieties, known for its long shape and distinctive
-              appearance. It is suitable for international trade
-              and different commercial requirements.
+              Akbari یکی از انواع پسته ممتاز ایرانی است که
+              به شکل کشیده و ظاهر متمایز خود شناخته می‌شود.
+              این محصول برای تجارت بین‌المللی و نیازهای
+              تجاری مختلف مناسب است.
             </p>
 
 
-            {/* Specifications */}
+            {/* مشخصات */}
             <div className="product-specifications">
 
               <div className="specification">
-                <span>Origin</span>
-                <strong>Iran</strong>
+                <span>مبدأ</span>
+                <strong>ایران</strong>
               </div>
 
               <div className="specification">
-                <span>Variety</span>
+                <span>نوع</span>
                 <strong>Akbari</strong>
               </div>
 
               <div className="specification">
-                <span>Product Type</span>
-                <strong>Pistachio</strong>
+                <span>نوع محصول</span>
+                <strong>پسته</strong>
               </div>
 
               <div className="specification">
-                <span>Packaging</span>
-                <strong>Custom Packaging</strong>
+                <span>بسته‌بندی</span>
+                <strong>بسته‌بندی سفارشی</strong>
               </div>
 
             </div>
 
 
-            {/* Button */}
+            {/* دکمه */}
             <a
               href="/quote"
               className="detail-quote-button"
             >
-              Request a Quote
+              درخواست قیمت
             </a>
 
           </div>
@@ -96,23 +96,23 @@ function ProductDetail() {
       </section>
 
 
-      {/* Product Details */}
+      {/* جزئیات محصول */}
       <section className="product-info-section">
         <div className="product-detail-container">
 
           <div className="product-info-heading">
 
             <span className="product-detail-label">
-              PRODUCT INFORMATION
+              اطلاعات محصول
             </span>
 
             <h2>
-              Quality & Trade Specifications
+              مشخصات کیفی و تجاری
             </h2>
 
             <p>
-              We can provide product specifications based on
-              your market requirements and order details.
+              می‌توانیم مشخصات محصول را بر اساس نیازهای بازار
+              و جزئیات سفارش شما ارائه کنیم.
             </p>
 
           </div>
@@ -121,41 +121,41 @@ function ProductDetail() {
           <div className="product-info-grid">
 
             <div className="info-card">
-              <h3>Quality</h3>
+              <h3>کیفیت</h3>
 
               <p>
-                Product quality can be selected according to
-                customer requirements and destination market.
+                کیفیت محصول می‌تواند بر اساس نیازهای مشتری
+                و بازار مقصد انتخاب شود.
               </p>
             </div>
 
 
             <div className="info-card">
-              <h3>Packaging</h3>
+              <h3>بسته‌بندی</h3>
 
               <p>
-                Packaging options can be discussed based on
-                quantity, destination, and customer requirements.
+                گزینه‌های بسته‌بندی بر اساس مقدار، مقصد
+                و نیازهای مشتری قابل بررسی است.
               </p>
             </div>
 
 
             <div className="info-card">
-              <h3>Quantity</h3>
+              <h3>مقدار</h3>
 
               <p>
-                We coordinate quantities according to the
-                requirements of each commercial order.
+                مقدار محصول را بر اساس نیازهای هر سفارش
+                تجاری هماهنگ می‌کنیم.
               </p>
             </div>
 
 
             <div className="info-card">
-              <h3>Delivery</h3>
+              <h3>تحویل</h3>
 
               <p>
-                Shipment and delivery arrangements can be
-                coordinated for international destinations.
+                هماهنگی‌های مربوط به ارسال و تحویل برای
+                مقاصد بین‌المللی قابل انجام است.
               </p>
             </div>
 
@@ -165,24 +165,24 @@ function ProductDetail() {
       </section>
 
 
-      {/* CTA */}
+      {/* درخواست */}
       <section className="product-detail-cta">
         <div className="product-detail-container">
 
           <h2>
-            Interested in Akbari Pistachios?
+            به پسته Akbari علاقه‌مند هستید؟
           </h2>
 
           <p>
-            Send us your required quantity, destination,
-            packaging, and other requirements.
+            مقدار موردنیاز، مقصد، نوع بسته‌بندی و سایر
+            نیازهای خود را برای ما ارسال کنید.
           </p>
 
           <a
             href="/quote"
             className="detail-quote-button"
           >
-            Request a Quote
+            درخواست قیمت
           </a>
 
         </div>

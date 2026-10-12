@@ -8,13 +8,13 @@ function Procurement() {
       <header className="procurement-header">
         <div>
           <span className="procurement-label">
-            PROCUREMENT
+            تأمین
           </span>
 
-          <h1>Procurement</h1>
+          <h1>تأمین</h1>
 
           <p>
-            Manage suppliers, purchase requests, sourcing, and procurement orders.
+            مدیریت تأمین‌کنندگان، درخواست‌های خرید، تأمین کالا و سفارش‌های خرید.
           </p>
         </div>
 
@@ -22,52 +22,52 @@ function Procurement() {
           to="/dashboard/trade-cases/new"
           className="procurement-button"
         >
-          New Purchase
+          خرید جدید
         </Link>
       </header>
 
 
-      {/* Summary Cards */}
+      {/* کارت‌های خلاصه */}
 
       <section className="procurement-summary">
 
         <article className="procurement-card">
-          <span>Purchase Requests</span>
+          <span>درخواست‌های خرید</span>
           <strong>15</strong>
         </article>
 
         <article className="procurement-card">
-          <span>Active Purchases</span>
+          <span>خریدهای فعال</span>
           <strong>9</strong>
         </article>
 
         <article className="procurement-card">
-          <span>Total Procurement</span>
+          <span>مجموع خرید</span>
           <strong>$680K</strong>
         </article>
 
         <article className="procurement-card">
-          <span>Pending Approval</span>
+          <span>در انتظار تأیید</span>
           <strong>4</strong>
         </article>
 
       </section>
 
 
-      {/* Purchase Requests */}
+      {/* درخواست‌های خرید */}
 
       <section className="procurement-panel">
 
         <div className="procurement-panel-header">
           <div>
-            <h2>Purchase Requests</h2>
+            <h2>درخواست‌های خرید</h2>
 
             <p>
-              Current sourcing and purchase requests.
+              درخواست‌های فعلی تأمین و خرید.
             </p>
           </div>
 
-          <span>15 Requests</span>
+          <span>15 درخواست</span>
         </div>
 
         <div className="procurement-table-wrapper">
@@ -76,14 +76,14 @@ function Procurement() {
 
             <thead>
               <tr>
-                <th>Request</th>
-                <th>Supplier</th>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Delivery</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th>درخواست</th>
+                <th>تأمین‌کننده</th>
+                <th>محصول</th>
+                <th>مقدار</th>
+                <th>قیمت</th>
+                <th>تحویل</th>
+                <th>وضعیت</th>
+                <th>عملیات</th>
               </tr>
             </thead>
 
@@ -93,17 +93,17 @@ function Procurement() {
                 <td>PR-001</td>
                 <td>Kerman Pistachio Co.</td>
                 <td>Akbari</td>
-                <td>40 Tons</td>
-                <td>$7,800 / Ton</td>
+                <td>40 تن</td>
+                <td>$7,800 / تن</td>
                 <td>Kerman</td>
                 <td>
                   <span className="procurement-status sourcing">
-                    Sourcing
+                    در حال تأمین
                   </span>
                 </td>
                 <td>
                   <Link to="/dashboard/trade-cases/TR-001">
-                    View
+                    مشاهده
                   </Link>
                 </td>
               </tr>
@@ -112,17 +112,17 @@ function Procurement() {
                 <td>PR-002</td>
                 <td>Rafsanjan Agro</td>
                 <td>Ahmad Aghaei</td>
-                <td>20 Tons</td>
-                <td>$7,500 / Ton</td>
+                <td>20 تن</td>
+                <td>$7,500 / تن</td>
                 <td>Rafsanjan</td>
                 <td>
                   <span className="procurement-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
                 <td>
                   <Link to="/dashboard/trade-cases/TR-002">
-                    View
+                    مشاهده
                   </Link>
                 </td>
               </tr>
@@ -131,17 +131,17 @@ function Procurement() {
                 <td>PR-003</td>
                 <td>Iran Nuts Trading</td>
                 <td>Fandoghi</td>
-                <td>30 Tons</td>
-                <td>$6,900 / Ton</td>
+                <td>30 تن</td>
+                <td>$6,900 / تن</td>
                 <td>Kerman</td>
                 <td>
                   <span className="procurement-status approved">
-                    Approved
+                    تأییدشده
                   </span>
                 </td>
                 <td>
                   <Link to="/dashboard/trade-cases/TR-003">
-                    View
+                    مشاهده
                   </Link>
                 </td>
               </tr>
@@ -150,17 +150,17 @@ function Procurement() {
                 <td>PR-004</td>
                 <td>Kerman Agro</td>
                 <td>Kalleh Ghouchi</td>
-                <td>25 Tons</td>
-                <td>$7,200 / Ton</td>
+                <td>25 تن</td>
+                <td>$7,200 / تن</td>
                 <td>Kerman</td>
                 <td>
                   <span className="procurement-status active">
-                    In Progress
+                    در حال انجام
                   </span>
                 </td>
                 <td>
                   <Link to="/dashboard/trade-cases/TR-004">
-                    View
+                    مشاهده
                   </Link>
                 </td>
               </tr>
@@ -174,20 +174,20 @@ function Procurement() {
       </section>
 
 
-      {/* Suppliers */}
+      {/* تأمین‌کنندگان */}
 
       <section className="procurement-panel">
 
         <div className="procurement-panel-header">
           <div>
-            <h2>Suppliers</h2>
+            <h2>تأمین‌کنندگان</h2>
 
             <p>
-              Main suppliers and their current activity.
+              تأمین‌کنندگان اصلی و فعالیت فعلی آن‌ها.
             </p>
           </div>
 
-          <span>24 Suppliers</span>
+          <span>24 تأمین‌کننده</span>
         </div>
 
         <div className="suppliers-grid">
@@ -199,7 +199,7 @@ function Procurement() {
             </div>
 
             <div className="supplier-info">
-              <span>Active Orders</span>
+              <span>سفارش‌های فعال</span>
               <strong>3</strong>
             </div>
           </article>
@@ -211,7 +211,7 @@ function Procurement() {
             </div>
 
             <div className="supplier-info">
-              <span>Active Orders</span>
+              <span>سفارش‌های فعال</span>
               <strong>2</strong>
             </div>
           </article>
@@ -223,7 +223,7 @@ function Procurement() {
             </div>
 
             <div className="supplier-info">
-              <span>Active Orders</span>
+              <span>سفارش‌های فعال</span>
               <strong>4</strong>
             </div>
           </article>
@@ -233,16 +233,16 @@ function Procurement() {
       </section>
 
 
-      {/* Procurement Pipeline */}
+      {/* فرآیند تأمین */}
 
       <section className="procurement-panel">
 
         <div className="procurement-panel-header">
           <div>
-            <h2>Procurement Pipeline</h2>
+            <h2>فرآیند تأمین</h2>
 
             <p>
-              Current purchase process.
+              روند فعلی خرید.
             </p>
           </div>
         </div>
@@ -251,7 +251,7 @@ function Procurement() {
 
           <div className="pipeline-step">
             <span>01</span>
-            <strong>Request</strong>
+            <strong>درخواست</strong>
             <small>15</small>
           </div>
 
@@ -261,7 +261,7 @@ function Procurement() {
 
           <div className="pipeline-step">
             <span>02</span>
-            <strong>Sourcing</strong>
+            <strong>تأمین</strong>
             <small>10</small>
           </div>
 
@@ -271,7 +271,7 @@ function Procurement() {
 
           <div className="pipeline-step">
             <span>03</span>
-            <strong>Supplier Offer</strong>
+            <strong>پیشنهاد تأمین‌کننده</strong>
             <small>7</small>
           </div>
 
@@ -281,7 +281,7 @@ function Procurement() {
 
           <div className="pipeline-step">
             <span>04</span>
-            <strong>Approved</strong>
+            <strong>تأییدشده</strong>
             <small>5</small>
           </div>
 
@@ -291,7 +291,7 @@ function Procurement() {
 
           <div className="pipeline-step">
             <span>05</span>
-            <strong>Purchase Order</strong>
+            <strong>سفارش خرید</strong>
             <small>4</small>
           </div>
 
@@ -300,21 +300,21 @@ function Procurement() {
       </section>
 
 
-      {/* Recent Purchases */}
+      {/* خریدهای اخیر */}
 
       <section className="procurement-panel">
 
         <div className="procurement-panel-header">
           <div>
-            <h2>Recent Purchases</h2>
+            <h2>خریدهای اخیر</h2>
 
             <p>
-              Recently created procurement cases.
+              پرونده‌های تأمین که اخیراً ایجاد شده‌اند.
             </p>
           </div>
 
           <Link to="/dashboard/trade-cases">
-            View All
+            مشاهده همه
           </Link>
         </div>
 
@@ -324,12 +324,12 @@ function Procurement() {
             <div>
               <strong>TR-001</strong>
               <span>
-                Kerman Pistachio Co. · Akbari · 40 Tons
+                Kerman Pistachio Co. · Akbari · 40 تن
               </span>
             </div>
 
             <span className="procurement-status sourcing">
-              Sourcing
+              در حال تأمین
             </span>
           </div>
 
@@ -337,12 +337,12 @@ function Procurement() {
             <div>
               <strong>TR-002</strong>
               <span>
-                Rafsanjan Agro · Ahmad Aghaei · 20 Tons
+                Rafsanjan Agro · Ahmad Aghaei · 20 تن
               </span>
             </div>
 
             <span className="procurement-status pending">
-              Pending
+              در انتظار
             </span>
           </div>
 
@@ -350,12 +350,12 @@ function Procurement() {
             <div>
               <strong>TR-003</strong>
               <span>
-                Iran Nuts Trading · Fandoghi · 30 Tons
+                Iran Nuts Trading · Fandoghi · 30 تن
               </span>
             </div>
 
             <span className="procurement-status approved">
-              Approved
+              تأییدشده
             </span>
           </div>
 

@@ -7,41 +7,41 @@ function Weighbridge() {
       <header className="weighbridge-header">
         <div>
           <span className="weighbridge-label">
-            LOGISTICS
+            لجستیک
           </span>
 
-          <h1>Weighbridge</h1>
+          <h1>باسکول</h1>
 
           <p>
-            Record and manage shipment weight information.
+            ثبت و مدیریت اطلاعات وزن محموله‌ها.
           </p>
         </div>
 
         <button className="weighbridge-button">
-          New Weighbridge Record
+          ثبت رکورد جدید باسکول
         </button>
       </header>
 
       <section className="weighbridge-summary">
 
         <div className="weight-summary-card">
-          <span>Total Records</span>
+          <span>مجموع رکوردها</span>
           <strong>42</strong>
         </div>
 
         <div className="weight-summary-card">
-          <span>Pending</span>
+          <span>در انتظار</span>
           <strong>5</strong>
         </div>
 
         <div className="weight-summary-card">
-          <span>Completed Today</span>
+          <span>تکمیل‌شده امروز</span>
           <strong>8</strong>
         </div>
 
         <div className="weight-summary-card">
-          <span>Total Net Weight</span>
-          <strong>186 Tons</strong>
+          <span>مجموع وزن خالص</span>
+          <strong>186 تن</strong>
         </div>
 
       </section>
@@ -49,11 +49,11 @@ function Weighbridge() {
       <section className="weighbridge-panel">
 
         <div className="weighbridge-panel-header">
-          <h2>Weighbridge Records</h2>
+          <h2>سوابق باسکول</h2>
 
           <input
             type="text"
-            placeholder="Search shipment..."
+            placeholder="جستجوی محموله..."
           />
         </div>
 
@@ -63,13 +63,13 @@ function Weighbridge() {
 
             <thead>
               <tr>
-                <th>Record</th>
-                <th>Shipment</th>
-                <th>Vehicle</th>
-                <th>Gross Weight</th>
-                <th>Tare Weight</th>
-                <th>Net Weight</th>
-                <th>Status</th>
+                <th>رکورد</th>
+                <th>محموله</th>
+                <th>وسیله نقلیه</th>
+                <th>وزن ناخالص</th>
+                <th>وزن خالی</th>
+                <th>وزن خالص</th>
+                <th>وضعیت</th>
               </tr>
             </thead>
 
@@ -79,12 +79,12 @@ function Weighbridge() {
                 <td>WB-001</td>
                 <td>SH-001</td>
                 <td>12A-34567</td>
-                <td>42,000 kg</td>
-                <td>2,000 kg</td>
-                <td>40,000 kg</td>
+                <td>42,000 کیلوگرم</td>
+                <td>2,000 کیلوگرم</td>
+                <td>40,000 کیلوگرم</td>
                 <td>
                   <span className="weight-status completed">
-                    Completed
+                    تکمیل‌شده
                   </span>
                 </td>
               </tr>
@@ -98,7 +98,7 @@ function Weighbridge() {
                 <td>—</td>
                 <td>
                   <span className="weight-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
               </tr>
@@ -107,12 +107,12 @@ function Weighbridge() {
                 <td>WB-003</td>
                 <td>SH-003</td>
                 <td>21C-11223</td>
-                <td>31,500 kg</td>
-                <td>1,500 kg</td>
-                <td>30,000 kg</td>
+                <td>31,500 کیلوگرم</td>
+                <td>1,500 کیلوگرم</td>
+                <td>30,000 کیلوگرم</td>
                 <td>
                   <span className="weight-status completed">
-                    Completed
+                    تکمیل‌شده
                   </span>
                 </td>
               </tr>

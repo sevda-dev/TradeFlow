@@ -8,34 +8,34 @@ function Footer() {
         <div className="footer-brand">
           <h2>TradeFlow</h2>
           <p>
-            Global trading and logistics solutions for businesses worldwide.
+            راهکارهای تجارت و لجستیک جهانی برای کسب‌وکارها در سراسر دنیا.
           </p>
         </div>
 
         <div className="footer-links">
-          <h3>Company</h3>
-          <a href="/about">About Us</a>
-          <a href="/products">Products</a>
-          <a href="/contact">Contact</a>
+          <h3>شرکت</h3>
+          <a href="/about">درباره ما</a>
+          <a href="/products">محصولات</a>
+          <a href="/contact">تماس با ما</a>
         </div>
 
         <div className="footer-links">
-          <h3>Services</h3>
-          <a href="/trading">Trading</a>
-          <a href="/logistics">Logistics</a>
-          <a href="/quote">Request a Quote</a>
+          <h3>خدمات</h3>
+          <a href="/trading">تجارت</a>
+          <a href="/logistics">لجستیک</a>
+          <a href="/quote">درخواست قیمت</a>
         </div>
 
         <div className="footer-contact">
-          <h3>Contact</h3>
-          <p>Email: info@tradeflow.com</p>
-          <p>Phone: +1 000 000 0000</p>
+          <h3>تماس</h3>
+          <p>ایمیل: info@tradeflow.com</p>
+          <p>تلفن: +1 000 000 0000</p>
         </div>
 
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 TradeFlow. All rights reserved.</p>
+        <p>© 2026 TradeFlow. تمامی حقوق محفوظ است.</p>
       </div>
     </footer>
   )

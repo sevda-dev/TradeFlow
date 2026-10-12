@@ -8,13 +8,13 @@ function Customs() {
       <header className="customs-header">
         <div>
           <span className="customs-label">
-            CUSTOMS
+            گمرک
           </span>
 
-          <h1>Customs</h1>
+          <h1>گمرک</h1>
 
           <p>
-            Manage customs declarations, clearance, and customs operations.
+            مدیریت اظهارنامه‌های گمرکی، ترخیص کالا و عملیات گمرکی.
           </p>
         </div>
       </header>
@@ -22,27 +22,27 @@ function Customs() {
       <section className="customs-summary">
 
         <div className="customs-card">
-          <span>Active Declarations</span>
+          <span>اظهارنامه‌های فعال</span>
           <strong>14</strong>
-          <small>Currently in process</small>
+          <small>در حال انجام</small>
         </div>
 
         <div className="customs-card">
-          <span>Pending Clearance</span>
+          <span>در انتظار ترخیص</span>
           <strong>7</strong>
-          <small>Waiting for clearance</small>
+          <small>در انتظار ترخیص</small>
         </div>
 
         <div className="customs-card">
-          <span>Cleared Shipments</span>
+          <span>محموله‌های ترخیص‌شده</span>
           <strong>28</strong>
-          <small>Successfully cleared</small>
+          <small>با موفقیت ترخیص‌شده</small>
         </div>
 
         <div className="customs-card">
-          <span>Customs Costs</span>
+          <span>هزینه‌های گمرکی</span>
           <strong>$42,500</strong>
-          <small>Current cases</small>
+          <small>پرونده‌های جاری</small>
         </div>
 
       </section>
@@ -51,10 +51,10 @@ function Customs() {
 
         <div className="section-header">
           <div>
-            <h2>Customs Operations</h2>
+            <h2>عملیات گمرکی</h2>
 
             <p>
-              Manage customs declarations and clearance operations.
+              مدیریت اظهارنامه‌ها و عملیات ترخیص گمرکی.
             </p>
           </div>
         </div>
@@ -69,14 +69,14 @@ function Customs() {
               01
             </span>
 
-            <h3>Declarations</h3>
+            <h3>اظهارنامه‌ها</h3>
 
             <p>
-              Create and manage customs declarations for shipments.
+              ایجاد و مدیریت اظهارنامه‌های گمرکی برای محموله‌ها.
             </p>
 
             <span className="operation-link">
-              View Declarations →
+              مشاهده اظهارنامه‌ها ←
             </span>
           </Link>
 
@@ -88,14 +88,14 @@ function Customs() {
               02
             </span>
 
-            <h3>Clearance</h3>
+            <h3>ترخیص</h3>
 
             <p>
-              Track customs clearance, brokers, costs, and clearance status.
+              پیگیری ترخیص گمرکی، کارگزاران، هزینه‌ها و وضعیت ترخیص.
             </p>
 
             <span className="operation-link">
-              View Clearance →
+              مشاهده ترخیص‌ها ←
             </span>
           </Link>
 

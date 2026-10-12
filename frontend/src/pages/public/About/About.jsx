@@ -4,55 +4,55 @@ function About() {
   return (
     <main className="about-page">
 
-      {/* Page Hero */}
+      {/* هیرو صفحه */}
       <section className="about-hero">
         <div className="about-container">
 
           <span className="about-label">
-            ABOUT TRADEFLOW
+            درباره TRADEFLOW
           </span>
 
           <h1>
-            Connecting Iranian Pistachios
+            اتصال پسته ایرانی
             <br />
-            with Global Markets
+            به بازارهای جهانی
           </h1>
 
           <p>
-            We are a trading company focused on sourcing
-            and supplying Iranian pistachios for international buyers.
+            ما یک شرکت بازرگانی هستیم که بر تأمین و عرضه
+            پسته ایرانی برای خریداران بین‌المللی تمرکز دارد.
           </p>
 
         </div>
       </section>
 
 
-      {/* About Company */}
+      {/* درباره شرکت */}
       <section className="about-section">
         <div className="about-container about-grid">
 
           <div className="about-content">
 
             <span className="section-label">
-              WHO WE ARE
+              ما چه کسانی هستیم
             </span>
 
             <h2>
-              A Reliable Partner in Pistachio Trade
+              شریکی قابل اعتماد در تجارت پسته
             </h2>
 
             <p>
-              TradeFlow is a trading company focused on the
-              international supply of Iranian pistachios.
-              We work with suppliers and international buyers
-              to coordinate the commercial process from sourcing
-              to delivery.
+              TradeFlow یک شرکت بازرگانی است که بر تأمین
+              بین‌المللی پسته ایرانی تمرکز دارد.
+              ما با تأمین‌کنندگان و خریداران بین‌المللی
+              همکاری می‌کنیم تا فرآیند تجاری را از تأمین
+              تا تحویل هماهنگ کنیم.
             </p>
 
             <p>
-              Our goal is to make international pistachio trade
-              more transparent, organized, and reliable for our
-              business partners.
+              هدف ما این است که تجارت بین‌المللی پسته را
+              برای شرکای تجاری خود شفاف‌تر، منظم‌تر
+              و قابل اعتمادتر کنیم.
             </p>
 
           </div>
@@ -61,28 +61,28 @@ function About() {
 
             <div className="highlight-item">
               <span>01</span>
-              <h3>Quality Products</h3>
+              <h3>محصولات باکیفیت</h3>
               <p>
-                Pistachios sourced according to customer
-                specifications and market requirements.
+                تأمین پسته بر اساس مشخصات موردنظر مشتری
+                و نیازهای بازار.
               </p>
             </div>
 
             <div className="highlight-item">
               <span>02</span>
-              <h3>Global Trade</h3>
+              <h3>تجارت جهانی</h3>
               <p>
-                Connecting Iranian suppliers with buyers
-                in international markets.
+                اتصال تأمین‌کنندگان ایرانی با خریداران
+                در بازارهای بین‌المللی.
               </p>
             </div>
 
             <div className="highlight-item">
               <span>03</span>
-              <h3>Trade Coordination</h3>
+              <h3>هماهنگی تجاری</h3>
               <p>
-                Coordinating sourcing, documentation,
-                logistics, and delivery.
+                هماهنگی تأمین، اسناد، لجستیک
+                و فرآیند تحویل.
               </p>
             </div>
 
@@ -92,23 +92,23 @@ function About() {
       </section>
 
 
-      {/* What We Do */}
+      {/* خدمات ما */}
       <section className="what-we-do-section">
         <div className="about-container">
 
           <div className="section-heading">
 
             <span className="section-label">
-              WHAT WE DO
+              خدمات ما
             </span>
 
             <h2>
-              From Sourcing to Delivery
+              از تأمین تا تحویل
             </h2>
 
             <p>
-              We coordinate the key stages of an international
-              pistachio trade transaction.
+              ما مراحل اصلی یک معامله بین‌المللی
+              پسته را هماهنگ می‌کنیم.
             </p>
 
           </div>
@@ -120,12 +120,12 @@ function About() {
               <span>01</span>
 
               <h3>
-                Product Sourcing
+                تأمین محصول
               </h3>
 
               <p>
-                Finding suitable pistachio products based on
-                variety, quality, quantity, and customer requirements.
+                یافتن محصولات مناسب پسته بر اساس نوع،
+                کیفیت، مقدار و نیازهای مشتری.
               </p>
             </div>
 
@@ -134,12 +134,12 @@ function About() {
               <span>02</span>
 
               <h3>
-                Commercial Coordination
+                هماهنگی تجاری
               </h3>
 
               <p>
-                Coordinating quotations, commercial terms,
-                documentation, and trade agreements.
+                هماهنگی پیش‌فاکتورها، شرایط تجاری،
+                اسناد و توافق‌های تجاری.
               </p>
             </div>
 
@@ -148,12 +148,12 @@ function About() {
               <span>03</span>
 
               <h3>
-                Logistics
+                لجستیک
               </h3>
 
               <p>
-                Coordinating transportation, shipping,
-                customs, and delivery processes.
+                هماهنگی حمل‌ونقل، ارسال، گمرک
+                و فرآیندهای تحویل.
               </p>
             </div>
 
@@ -162,12 +162,12 @@ function About() {
               <span>04</span>
 
               <h3>
-                International Delivery
+                تحویل بین‌المللی
               </h3>
 
               <p>
-                Supporting the shipment process until the
-                products reach their destination.
+                پشتیبانی از فرآیند ارسال تا زمانی که
+                محصولات به مقصد موردنظر برسند.
               </p>
             </div>
 
@@ -177,31 +177,30 @@ function About() {
       </section>
 
 
-      {/* Mission */}
+      {/* رویکرد ما */}
       <section className="mission-section">
         <div className="about-container">
 
           <div className="mission-content">
 
             <span className="section-label">
-              OUR APPROACH
+              رویکرد ما
             </span>
 
             <h2>
-              Built Around Reliable Trade
+              تجارت قابل اعتماد
             </h2>
 
             <p>
-              We believe successful international trade requires
-              clear communication, reliable sourcing, accurate
-              documentation, and coordinated logistics.
+              ما معتقدیم تجارت بین‌المللی موفق به ارتباطات
+              شفاف، تأمین قابل اعتماد، اسناد دقیق
+              و لجستیک هماهنگ نیاز دارد.
             </p>
 
             <p>
-              We aim to build long-term relationships with
-              suppliers and international buyers by understanding
-              their requirements and coordinating each stage of
-              the trading process.
+              هدف ما ایجاد روابط بلندمدت با تأمین‌کنندگان
+              و خریداران بین‌المللی از طریق درک نیازهای
+              آن‌ها و هماهنگی هر مرحله از فرآیند تجارت است.
             </p>
 
           </div>
@@ -215,19 +214,19 @@ function About() {
         <div className="about-container">
 
           <h2>
-            Looking for Iranian Pistachios?
+            به دنبال پسته ایرانی هستید؟
           </h2>
 
           <p>
-            Tell us about your requirements and let's discuss
-            your next order.
+            نیازهای خود را با ما در میان بگذارید تا درباره
+            سفارش بعدی شما گفت‌وگو کنیم.
           </p>
 
           <a
             href="/quote"
             className="about-cta-button"
           >
-            Request a Quote
+            درخواست قیمت
           </a>
 
         </div>

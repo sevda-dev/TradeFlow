@@ -10,19 +10,19 @@ function Header() {
         </a>
 
         <nav className="main-nav">
-          <a href="/">Home</a>
-          <a href="/products">Products</a>
-          <a href="/about">About Us</a>
-          <a href="/contact">Contact</a>
+          <a href="/">خانه</a>
+          <a href="/products">محصولات</a>
+          <a href="/about">درباره ما</a>
+          <a href="/contact">تماس با ما</a>
         </nav>
 
         <div className="header-actions">
           <a href="/login" className="login-link">
-            Login
+            ورود
           </a>
 
           <a href="/quote" className="quote-button">
-            Request a Quote
+            درخواست قیمت
           </a>
         </div>
 

@@ -1,8 +1,9 @@
 .new-case-page {
   min-height: 100vh;
   padding: 40px;
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #F5EFE6;
+  color: #343A32;
+  box-sizing: border-box;
 }
 
 .new-case-header {
@@ -10,7 +11,7 @@
 }
 
 .new-case-label {
-  color: #20c997;
+  color: #637C5C;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -18,24 +19,28 @@
 
 .new-case-header h1 {
   margin: 8px 0;
+  color: #343A32;
   font-size: 34px;
 }
 
 .new-case-header p {
   margin: 0;
-  color: #91a4b5;
+  color: #73796F;
+  line-height: 1.7;
 }
 
 .new-case-form {
+  width: 100%;
   max-width: 1100px;
 }
 
 .new-case-section {
   margin-bottom: 24px;
   padding: 28px;
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D8CE;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(52, 58, 50, 0.04);
 }
 
 .section-header {
@@ -44,18 +49,20 @@
 
 .section-header h2 {
   margin: 0 0 6px;
+  color: #343A32;
   font-size: 20px;
 }
 
 .section-header p {
   margin: 0;
-  color: #91a4b5;
+  color: #73796F;
   font-size: 14px;
+  line-height: 1.7;
 }
 
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
 }
 
@@ -63,10 +70,11 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
 }
 
 .form-group label {
-  color: #d9e2e9;
+  color: #343A32;
   font-size: 14px;
   font-weight: 600;
 }
@@ -77,70 +85,127 @@
   width: 100%;
   box-sizing: border-box;
   padding: 12px 14px;
-  border: 1px solid #1c3448;
-  border-radius: 6px;
-  background-color: #07131f;
-  color: #ffffff;
+  border: 1px solid #D8D8CE;
+  border-radius: 7px;
+  background-color: #FAF9F5;
+  color: #343A32;
   font-family: inherit;
   font-size: 14px;
   outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #8A8F85;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #20c997;
+  border-color: #91A88A;
+  box-shadow: 0 0 0 3px rgba(145, 168, 138, 0.18);
+}
+
+.form-group select {
+  cursor: pointer;
 }
 
 .form-group textarea {
   resize: vertical;
+  min-height: 110px;
+  line-height: 1.7;
+}
+
+.form-group input:disabled,
+.form-group select:disabled,
+.form-group textarea:disabled {
+  background-color: #F1F0E9;
+  color: #73796F;
+  cursor: not-allowed;
 }
 
 .new-case-actions {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 14px;
   margin-top: 24px;
 }
 
 .cancel-button,
 .save-case-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 20px;
-  border-radius: 6px;
+  border-radius: 7px;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .cancel-button {
-  border: 1px solid #1c3448;
-  background-color: #0b1726;
-  color: #ffffff;
+  border: 1px solid #D8D8CE;
+  background-color: #FFFFFF;
+  color: #343A32;
+}
+
+.cancel-button:hover {
+  border-color: #91A88A;
+  background-color: #F5F7F1;
 }
 
 .save-case-button {
-  border: none;
-  background-color: #20c997;
-  color: #07131f;
+  border: 1px solid #91A88A;
+  background-color: #91A88A;
+  color: #FFFFFF;
 }
 
 .save-case-button:hover {
-  background-color: #2dd4a3;
+  border-color: #7F9878;
+  background-color: #7F9878;
+}
+
+.cancel-button:focus-visible,
+.save-case-button:focus-visible {
+  outline: 2px solid #637C5C;
+  outline-offset: 3px;
+}
+
+.cancel-button:disabled,
+.save-case-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .new-case-page {
+    padding: 30px 24px;
+  }
 }
 
 @media (max-width: 768px) {
-
   .new-case-page {
     padding: 24px 16px;
   }
 
+  .new-case-header h1 {
+    font-size: 28px;
+  }
+
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .new-case-section {
-    padding: 20px;
+    padding: 20px 16px;
   }
 
   .new-case-actions {
@@ -149,6 +214,18 @@
 
   .cancel-button,
   .save-case-button {
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-group input,
+  .form-group select,
+  .form-group textarea,
+  .cancel-button,
+  .save-case-button {
+    transition: none;
   }
 }

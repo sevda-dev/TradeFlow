@@ -8,13 +8,13 @@ function Sales() {
       <header className="sales-header">
         <div>
           <span className="sales-label">
-            SALES
+            فروش
           </span>
 
-          <h1>Sales</h1>
+          <h1>فروش</h1>
 
           <p>
-            Manage customers, sales requests, quotations, and sales orders.
+            مدیریت مشتریان، درخواست‌های فروش، پیش‌فاکتورها و سفارش‌های فروش.
           </p>
         </div>
 
@@ -22,52 +22,52 @@ function Sales() {
           to="/dashboard/trade-cases/new"
           className="sales-button"
         >
-          New Sale
+          فروش جدید
         </Link>
       </header>
 
 
-      {/* Summary Cards */}
+      {/* کارت‌های خلاصه */}
 
       <section className="sales-summary">
 
         <article className="sales-card">
-          <span>Pending Quotes</span>
+          <span>پیش‌فاکتورهای در انتظار</span>
           <strong>12</strong>
         </article>
 
         <article className="sales-card">
-          <span>Active Sales</span>
+          <span>فروش‌های فعال</span>
           <strong>18</strong>
         </article>
 
         <article className="sales-card">
-          <span>Total Sales Value</span>
+          <span>مجموع ارزش فروش</span>
           <strong>$1.24M</strong>
         </article>
 
         <article className="sales-card">
-          <span>Pending Approval</span>
+          <span>در انتظار تأیید</span>
           <strong>5</strong>
         </article>
 
       </section>
 
 
-      {/* Sales Requests */}
+      {/* درخواست‌های فروش */}
 
       <section className="sales-panel">
 
         <div className="sales-panel-header">
           <div>
-            <h2>Sales Requests</h2>
+            <h2>درخواست‌های فروش</h2>
 
             <p>
-              Customer requests and quotations.
+              درخواست‌های مشتریان و پیش‌فاکتورها.
             </p>
           </div>
 
-          <span>12 Requests</span>
+          <span>12 درخواست</span>
         </div>
 
         <div className="sales-table-wrapper">
@@ -76,13 +76,13 @@ function Sales() {
 
             <thead>
               <tr>
-                <th>Request</th>
-                <th>Customer</th>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Destination</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th>درخواست</th>
+                <th>مشتری</th>
+                <th>محصول</th>
+                <th>مقدار</th>
+                <th>مقصد</th>
+                <th>وضعیت</th>
+                <th>عملیات</th>
               </tr>
             </thead>
 
@@ -92,16 +92,16 @@ function Sales() {
                 <td>SR-001</td>
                 <td>Global Foods Ltd.</td>
                 <td>Akbari</td>
-                <td>40 Tons</td>
+                <td>40 تن</td>
                 <td>Dubai, UAE</td>
                 <td>
                   <span className="sales-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
                 <td>
                   <Link to="/dashboard/trade-cases/TR-001">
-                    View
+                    مشاهده
                   </Link>
                 </td>
               </tr>
@@ -110,16 +110,16 @@ function Sales() {
                 <td>SR-002</td>
                 <td>Euro Nuts GmbH</td>
                 <td>Ahmad Aghaei</td>
-                <td>20 Tons</td>
+                <td>20 تن</td>
                 <td>Hamburg, Germany</td>
                 <td>
                   <span className="sales-status quotation">
-                    Quotation
+                    پیش‌فاکتور
                   </span>
                 </td>
                 <td>
                   <Link to="/dashboard/trade-cases/TR-002">
-                    View
+                    مشاهده
                   </Link>
                 </td>
               </tr>
@@ -128,16 +128,16 @@ function Sales() {
                 <td>SR-003</td>
                 <td>Dubai Foods LLC</td>
                 <td>Fandoghi</td>
-                <td>30 Tons</td>
+                <td>30 تن</td>
                 <td>Dubai, UAE</td>
                 <td>
                   <span className="sales-status approved">
-                    Approved
+                    تأییدشده
                   </span>
                 </td>
                 <td>
                   <Link to="/dashboard/trade-cases/TR-003">
-                    View
+                    مشاهده
                   </Link>
                 </td>
               </tr>
@@ -146,16 +146,16 @@ function Sales() {
                 <td>SR-004</td>
                 <td>Global Nuts GmbH</td>
                 <td>Kalleh Ghouchi</td>
-                <td>25 Tons</td>
+                <td>25 تن</td>
                 <td>Berlin, Germany</td>
                 <td>
                   <span className="sales-status active">
-                    In Progress
+                    در حال انجام
                   </span>
                 </td>
                 <td>
                   <Link to="/dashboard/trade-cases/TR-004">
-                    View
+                    مشاهده
                   </Link>
                 </td>
               </tr>
@@ -169,16 +169,16 @@ function Sales() {
       </section>
 
 
-      {/* Sales Pipeline */}
+      {/* فرآیند فروش */}
 
       <section className="sales-panel">
 
         <div className="sales-panel-header">
           <div>
-            <h2>Sales Pipeline</h2>
+            <h2>فرآیند فروش</h2>
 
             <p>
-              Current sales process.
+              روند فعلی فروش.
             </p>
           </div>
         </div>
@@ -187,7 +187,7 @@ function Sales() {
 
           <div className="pipeline-step">
             <span>01</span>
-            <strong>Request</strong>
+            <strong>درخواست</strong>
             <small>12</small>
           </div>
 
@@ -197,7 +197,7 @@ function Sales() {
 
           <div className="pipeline-step">
             <span>02</span>
-            <strong>Quotation</strong>
+            <strong>پیش‌فاکتور</strong>
             <small>8</small>
           </div>
 
@@ -207,7 +207,7 @@ function Sales() {
 
           <div className="pipeline-step">
             <span>03</span>
-            <strong>Negotiation</strong>
+            <strong>مذاکره</strong>
             <small>5</small>
           </div>
 
@@ -217,7 +217,7 @@ function Sales() {
 
           <div className="pipeline-step">
             <span>04</span>
-            <strong>Approved</strong>
+            <strong>تأییدشده</strong>
             <small>4</small>
           </div>
 
@@ -227,7 +227,7 @@ function Sales() {
 
           <div className="pipeline-step">
             <span>05</span>
-            <strong>Trade Case</strong>
+            <strong>پرونده تجاری</strong>
             <small>3</small>
           </div>
 
@@ -236,21 +236,21 @@ function Sales() {
       </section>
 
 
-      {/* Recent Sales */}
+      {/* فروش‌های اخیر */}
 
       <section className="sales-panel">
 
         <div className="sales-panel-header">
           <div>
-            <h2>Recent Sales</h2>
+            <h2>فروش‌های اخیر</h2>
 
             <p>
-              Recently created sales cases.
+              پرونده‌های فروش که اخیراً ایجاد شده‌اند.
             </p>
           </div>
 
           <Link to="/dashboard/trade-cases">
-            View All
+            مشاهده همه
           </Link>
         </div>
 
@@ -259,33 +259,33 @@ function Sales() {
           <div className="recent-sale">
             <div>
               <strong>TR-001</strong>
-              <span>Global Foods Ltd. · Akbari · 40 Tons</span>
+              <span>Global Foods Ltd. · Akbari · 40 تن</span>
             </div>
 
             <span className="sales-status active">
-              In Progress
+              در حال انجام
             </span>
           </div>
 
           <div className="recent-sale">
             <div>
               <strong>TR-002</strong>
-              <span>Euro Nuts GmbH · Ahmad Aghaei · 20 Tons</span>
+              <span>Euro Nuts GmbH · Ahmad Aghaei · 20 تن</span>
             </div>
 
             <span className="sales-status quotation">
-              Quotation
+              پیش‌فاکتور
             </span>
           </div>
 
           <div className="recent-sale">
             <div>
               <strong>TR-004</strong>
-              <span>Global Nuts GmbH · Kalleh Ghouchi · 25 Tons</span>
+              <span>Global Nuts GmbH · Kalleh Ghouchi · 25 تن</span>
             </div>
 
             <span className="sales-status approved">
-              Approved
+              تأییدشده
             </span>
           </div>
 

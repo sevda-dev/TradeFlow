@@ -1,9 +1,8 @@
 .contact-page {
   width: 100%;
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #343A32;
+  color: #F5EFE6;
 }
-
 
 /* =========================
    Common
@@ -16,7 +15,6 @@
   padding-right: 24px;
 }
 
-
 /* =========================
    Contact Hero
 ========================= */
@@ -24,14 +22,14 @@
 .contact-hero {
   padding: 110px 0;
   text-align: center;
-  background-color: #0b1726;
-  border-bottom: 1px solid #1c3448;
+  background-color: #41483E;
+  border-bottom: 1px solid #596352;
 }
 
 .contact-label,
 .section-label {
   display: inline-block;
-  color: #20c997;
+  color: #A9BEA2;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -46,11 +44,10 @@
 .contact-hero p {
   max-width: 650px;
   margin: 0 auto;
-  color: #9caab8;
+  color: #D0D2C9;
   font-size: 18px;
   line-height: 1.7;
 }
-
 
 /* =========================
    Contact Section
@@ -58,15 +55,16 @@
 
 .contact-section {
   padding: 100px 0;
+  background-color: #F5EFE6;
+  color: #343A32;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 80px;
   align-items: start;
 }
-
 
 /* =========================
    Contact Information
@@ -86,7 +84,7 @@
 .contact-info > p {
   max-width: 520px;
   margin: 0;
-  color: #9caab8;
+  color: #73796F;
   line-height: 1.8;
 }
 
@@ -99,7 +97,7 @@
 
 .contact-item {
   padding-left: 20px;
-  border-left: 2px solid #20c997;
+  border-left: 2px solid #91A88A;
 }
 
 .contact-item h3 {
@@ -109,9 +107,9 @@
 
 .contact-item p {
   margin: 0;
-  color: #9caab8;
+  color: #73796F;
+  overflow-wrap: anywhere;
 }
-
 
 /* =========================
    Contact Form
@@ -119,15 +117,16 @@
 
 .contact-form-wrapper {
   padding: 35px;
-
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D8CE;
   border-radius: 10px;
+  box-shadow: 0 12px 35px rgba(52, 58, 50, 0.08);
 }
 
 .contact-form-wrapper h2 {
   margin: 0 0 30px;
   font-size: 26px;
+  color: #343A32;
 }
 
 .contact-form {
@@ -143,7 +142,7 @@
 }
 
 .form-group label {
-  color: #ffffff;
+  color: #343A32;
   font-size: 14px;
   font-weight: 500;
 }
@@ -152,21 +151,17 @@
 .form-group textarea {
   width: 100%;
   box-sizing: border-box;
-
   padding: 13px 15px;
-
-  background-color: #07131f;
-  color: #ffffff;
-
-  border: 1px solid #1c3448;
+  background-color: #FAF9F5;
+  color: #343A32;
+  border: 1px solid #D8D8CE;
   border-radius: 6px;
-
   font-family: inherit;
   font-size: 14px;
-
   outline: none;
-
-  transition: border-color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .form-group input {
@@ -180,14 +175,14 @@
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #718096;
+  color: #92968B;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #20c997;
+  border-color: #91A88A;
+  box-shadow: 0 0 0 3px rgba(145, 168, 138, 0.2);
 }
-
 
 /* =========================
    Submit Button
@@ -196,28 +191,33 @@
 .contact-submit {
   width: 100%;
   padding: 14px 20px;
-
-  background-color: #20c997;
-  color: #07131f;
-
+  background-color: #91A88A;
+  color: #343A32;
   border: none;
   border-radius: 6px;
-
   font-size: 14px;
   font-weight: 600;
-
   cursor: pointer;
-
   transition:
     background-color 0.2s ease,
     transform 0.2s ease;
 }
 
 .contact-submit:hover {
-  background-color: #2dd4a3;
+  background-color: #7F9878;
   transform: translateY(-1px);
 }
 
+.contact-submit:focus-visible {
+  outline: 2px solid #637C5C;
+  outline-offset: 3px;
+}
+
+.contact-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
 
 /* =========================
    Responsive
@@ -242,7 +242,6 @@
   }
 }
 
-
 @media (max-width: 500px) {
   .contact-container {
     padding-left: 20px;
@@ -263,5 +262,17 @@
 
   .contact-hero p {
     font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-group input,
+  .form-group textarea,
+  .contact-submit {
+    transition: none;
+  }
+
+  .contact-submit:hover {
+    transform: none;
   }
 }

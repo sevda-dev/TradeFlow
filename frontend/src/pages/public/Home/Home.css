@@ -1,7 +1,7 @@
 .home-page {
   width: 100%;
-  background-color: #07131f;
-  color: #ffffff;
+  background-color: #343A32;
+  color: #F5EFE6;
 }
 
 /* =========================
@@ -21,7 +21,7 @@
 }
 
 .section-heading span {
-  color: #20c997;
+  color: #91A88A;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -35,10 +35,9 @@
 
 .section-heading p {
   margin: 0;
-  color: #9caab8;
+  color: #D0D2C9;
   line-height: 1.7;
 }
-
 
 /* =========================
    Hero
@@ -52,9 +51,9 @@
   background:
     linear-gradient(
       90deg,
-      rgba(7, 19, 31, 0.98),
-      rgba(7, 19, 31, 0.82),
-      rgba(7, 19, 31, 0.65)
+      rgba(52, 58, 50, 0.97),
+      rgba(52, 58, 50, 0.85),
+      rgba(52, 58, 50, 0.65)
     ),
     url('/images/hero.jpg');
 
@@ -72,8 +71,7 @@
 .hero-label {
   display: inline-block;
   margin-bottom: 20px;
-
-  color: #20c997;
+  color: #91A88A;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -82,7 +80,6 @@
 .hero-content h1 {
   max-width: 800px;
   margin: 0 0 24px;
-
   font-size: 64px;
   line-height: 1.1;
   font-weight: 700;
@@ -91,8 +88,7 @@
 .hero-content p {
   max-width: 620px;
   margin: 0 0 35px;
-
-  color: #b8c3ce;
+  color: #E0E2D9;
   font-size: 18px;
   line-height: 1.7;
 }
@@ -107,14 +103,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 13px 22px;
   border-radius: 6px;
-
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
-
   transition:
     background-color 0.2s ease,
     color 0.2s ease,
@@ -126,45 +119,49 @@
 }
 
 .hero-button.primary {
-  background-color: #20c997;
-  color: #07131f;
+  background-color: #91A88A;
+  color: #343A32;
 }
 
 .hero-button.primary:hover {
-  background-color: #2dd4a3;
+  background-color: #7F9878;
 }
 
 .hero-button.secondary {
   background-color: transparent;
-  color: #ffffff;
-  border: 1px solid #20c997;
+  color: #F5EFE6;
+  border: 1px solid #91A88A;
 }
 
 .hero-button.secondary:hover {
-  background-color: #20c997;
-  color: #07131f;
+  background-color: #91A88A;
+  color: #343A32;
 }
-
 
 /* =========================
    Products
 ========================= */
 
 .products-section {
-  background-color: #0b1726;
+  background-color: #F5EFE6;
+  color: #343A32;
 }
 
 .products-section .section-heading {
   margin-bottom: 0;
 }
 
+.products-section .section-heading p {
+  color: #73796F;
+}
 
 /* =========================
    Why TradeFlow
 ========================= */
 
 .why-section {
-  background-color: #07131f;
+  background-color: #343A32;
+  color: #F5EFE6;
 }
 
 .why-grid {
@@ -175,11 +172,9 @@
 
 .why-card {
   padding: 30px;
-
-  background-color: #0b1726;
-  border: 1px solid #1c3448;
+  background-color: #41483E;
+  border: 1px solid #596352;
   border-radius: 10px;
-
   transition:
     transform 0.25s ease,
     border-color 0.25s ease;
@@ -187,30 +182,32 @@
 
 .why-card:hover {
   transform: translateY(-5px);
-  border-color: #20c997;
+  border-color: #91A88A;
 }
 
 .why-card h3 {
   margin: 0 0 15px;
-
-  color: #ffffff;
+  color: #F5EFE6;
   font-size: 20px;
 }
 
 .why-card p {
   margin: 0;
-
-  color: #9caab8;
+  color: #D0D2C9;
   line-height: 1.7;
 }
-
 
 /* =========================
    How It Works
 ========================= */
 
 .how-section {
-  background-color: #0b1726;
+  background-color: #EAE3D8;
+  color: #343A32;
+}
+
+.how-section .section-heading p {
+  color: #73796F;
 }
 
 .steps-grid {
@@ -222,32 +219,27 @@
 .step {
   position: relative;
   padding: 30px;
-
-  border-top: 2px solid #20c997;
+  border-top: 2px solid #91A88A;
 }
 
 .step > span {
   display: block;
   margin-bottom: 20px;
-
-  color: #20c997;
+  color: #637C5C;
   font-size: 14px;
   font-weight: 700;
 }
 
 .step h3 {
   margin: 0 0 12px;
-
   font-size: 19px;
 }
 
 .step p {
   margin: 0;
-
-  color: #9caab8;
+  color: #73796F;
   line-height: 1.6;
 }
-
 
 /* =========================
    CTA
@@ -255,30 +247,26 @@
 
 .cta-section {
   padding: 100px 24px;
-
-  background-color: #07131f;
+  background-color: #343A32;
+  color: #F5EFE6;
 }
 
 .cta-content {
   max-width: 800px;
   margin: 0 auto;
-
   text-align: center;
 }
 
 .cta-content h2 {
   margin: 0 0 18px;
-
   font-size: 40px;
 }
 
 .cta-content p {
   margin: 0 0 30px;
-
-  color: #9caab8;
+  color: #D0D2C9;
   line-height: 1.7;
 }
-
 
 /* =========================
    Responsive
@@ -297,7 +285,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 @media (max-width: 600px) {
   .section-container {
@@ -327,6 +314,7 @@
 
   .hero-button {
     width: 100%;
+    box-sizing: border-box;
   }
 
   .section-heading h2 {
@@ -343,5 +331,17 @@
 
   .cta-content h2 {
     font-size: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-button,
+  .why-card {
+    transition: none;
+  }
+
+  .hero-button:hover,
+  .why-card:hover {
+    transform: none;
   }
 }

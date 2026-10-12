@@ -1,0 +1,30 @@
+[0;1;39mGlobal[0m
+[0;94m         Protocols:[0m -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+[0;94m  resolv.conf mode:[0m stub
+
+[0;1;39mLink 2 (ens33)[0m
+[0;94m    Current Scopes:[0m DNS
+[0;94m         Protocols:[0m +DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+[0;94mCurrent DNS Server:[0m 192.168.26.2
+[0;94m       DNS Servers:[0m 192.168.26.2
+[0;94m     Default Route:[0m yes
+
+[0;1;39mLink 3 (br-8f96bc44cdda)[0m
+[0;94m    Current Scopes:[0m none
+[0;94m         Protocols:[0m -DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+[0;94m     Default Route:[0m no
+
+[0;1;39mLink 4 (docker0)[0m
+[0;94m    Current Scopes:[0m none
+[0;94m         Protocols:[0m -DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+[0;94m     Default Route:[0m no
+
+[0;1;39mLink 5 (br-130124df1fe8)[0m
+[0;94m    Current Scopes:[0m none
+[0;94m         Protocols:[0m -DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+[0;94m     Default Route:[0m no
+
+[0;1;39mLink 6 (br-79c949cdf2d8)[0m
+[0;94m    Current Scopes:[0m none
+[0;94m         Protocols:[0m -DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+[0;94m     Default Route:[0m no

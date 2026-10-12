@@ -8,15 +8,15 @@ function AllCases() {
 
         <div>
           <span className="all-cases-label">
-            TRADE CASES
+            پرونده‌های تجاری
           </span>
 
           <h1>
-            All Cases
+            همه پرونده‌ها
           </h1>
 
           <p>
-            View and manage all commercial trade cases.
+            مشاهده و مدیریت تمام پرونده‌های تجاری.
           </p>
         </div>
 
@@ -24,7 +24,7 @@ function AllCases() {
           href="/dashboard/trade-cases/new"
           className="all-cases-button"
         >
-          New Case
+          پرونده جدید
         </a>
 
       </header>
@@ -34,20 +34,20 @@ function AllCases() {
 
         <input
           type="text"
-          placeholder="Search cases..."
+          placeholder="جستجوی پرونده‌ها..."
         />
 
         <select defaultValue="all">
-          <option value="all">All Status</option>
-          <option value="pending">Pending</option>
-          <option value="active">In Progress</option>
-          <option value="completed">Completed</option>
+          <option value="all">همه وضعیت‌ها</option>
+          <option value="pending">در انتظار</option>
+          <option value="active">در حال انجام</option>
+          <option value="completed">تکمیل‌شده</option>
         </select>
 
         <select defaultValue="all">
-          <option value="all">All Types</option>
-          <option value="sale">Sale</option>
-          <option value="purchase">Purchase</option>
+          <option value="all">همه انواع</option>
+          <option value="sale">فروش</option>
+          <option value="purchase">خرید</option>
         </select>
 
       </section>
@@ -57,11 +57,11 @@ function AllCases() {
 
         <div className="cases-panel-header">
           <h2>
-            Trade Cases
+            پرونده‌های تجاری
           </h2>
 
           <span>
-            24 Cases
+            24 پرونده
           </span>
         </div>
 
@@ -72,14 +72,14 @@ function AllCases() {
 
             <thead>
               <tr>
-                <th>Case</th>
-                <th>Type</th>
-                <th>Customer</th>
-                <th>Supplier</th>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th>پرونده</th>
+                <th>نوع</th>
+                <th>مشتری</th>
+                <th>تأمین‌کننده</th>
+                <th>محصول</th>
+                <th>مقدار</th>
+                <th>وضعیت</th>
+                <th>عملیات</th>
               </tr>
             </thead>
 
@@ -88,19 +88,19 @@ function AllCases() {
 
               <tr>
                 <td>TR-001</td>
-                <td>Sale</td>
+                <td>فروش</td>
                 <td>Global Foods Ltd.</td>
                 <td>Kerman Pistachio Co.</td>
                 <td>Akbari</td>
-                <td>40 Tons</td>
+                <td>40 تن</td>
                 <td>
                   <span className="case-status active">
-                    In Progress
+                    در حال انجام
                   </span>
                 </td>
                 <td>
                   <a href="/dashboard/trade-cases/TR-001">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -108,19 +108,19 @@ function AllCases() {
 
               <tr>
                 <td>TR-002</td>
-                <td>Sale</td>
+                <td>فروش</td>
                 <td>Euro Nuts GmbH</td>
                 <td>Rafsanjan Agro</td>
                 <td>Ahmad Aghaei</td>
-                <td>20 Tons</td>
+                <td>20 تن</td>
                 <td>
                   <span className="case-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
                 <td>
                   <a href="/dashboard/trade-cases/TR-002">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -128,19 +128,19 @@ function AllCases() {
 
               <tr>
                 <td>TR-003</td>
-                <td>Purchase</td>
+                <td>خرید</td>
                 <td>Dubai Foods LLC</td>
                 <td>Iran Nuts Trading</td>
                 <td>Fandoghi</td>
-                <td>30 Tons</td>
+                <td>30 تن</td>
                 <td>
                   <span className="case-status completed">
-                    Completed
+                    تکمیل‌شده
                   </span>
                 </td>
                 <td>
                   <a href="/dashboard/trade-cases/TR-003">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>
@@ -148,19 +148,19 @@ function AllCases() {
 
               <tr>
                 <td>TR-004</td>
-                <td>Sale</td>
+                <td>فروش</td>
                 <td>Global Nuts GmbH</td>
                 <td>Kerman Agro</td>
                 <td>Kalleh Ghouchi</td>
-                <td>25 Tons</td>
+                <td>25 تن</td>
                 <td>
                   <span className="case-status active">
-                    In Progress
+                    در حال انجام
                   </span>
                 </td>
                 <td>
                   <a href="/dashboard/trade-cases/TR-004">
-                    View
+                    مشاهده
                   </a>
                 </td>
               </tr>

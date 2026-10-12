@@ -7,40 +7,40 @@ function PaymentRequests() {
       <header className="payment-requests-header">
         <div>
           <span className="payment-requests-label">
-            FINANCE
+            امور مالی
           </span>
 
-          <h1>Payment Requests</h1>
+          <h1>درخواست‌های پرداخت</h1>
 
           <p>
-            Create and manage requests for financial payments.
+            ایجاد و مدیریت درخواست‌های پرداخت مالی.
           </p>
         </div>
 
         <button className="payment-requests-button">
-          New Payment Request
+          درخواست پرداخت جدید
         </button>
       </header>
 
       <section className="payment-requests-summary">
 
         <div className="payment-request-card">
-          <span>Total Requests</span>
+          <span>مجموع درخواست‌ها</span>
           <strong>42</strong>
         </div>
 
         <div className="payment-request-card">
-          <span>Pending Approval</span>
+          <span>در انتظار تأیید</span>
           <strong>12</strong>
         </div>
 
         <div className="payment-request-card">
-          <span>Approved</span>
+          <span>تأییدشده</span>
           <strong>20</strong>
         </div>
 
         <div className="payment-request-card">
-          <span>Rejected</span>
+          <span>ردشده</span>
           <strong>10</strong>
         </div>
 
@@ -51,18 +51,18 @@ function PaymentRequests() {
         <div className="payment-requests-panel-header">
 
           <div>
-            <h2>Payment Requests</h2>
+            <h2>درخواست‌های پرداخت</h2>
 
             <p>
-              Review payment requests before actual payment.
+              درخواست‌های پرداخت را پیش از انجام پرداخت بررسی کنید.
             </p>
           </div>
 
           <select defaultValue="all">
-            <option value="all">All Status</option>
-            <option value="pending">Pending</option>
-            <option value="approved">Approved</option>
-            <option value="rejected">Rejected</option>
+            <option value="all">همه وضعیت‌ها</option>
+            <option value="pending">در انتظار</option>
+            <option value="approved">تأییدشده</option>
+            <option value="rejected">ردشده</option>
           </select>
 
         </div>
@@ -73,13 +73,13 @@ function PaymentRequests() {
 
             <thead>
               <tr>
-                <th>Request</th>
-                <th>Trade Case</th>
-                <th>Purpose</th>
-                <th>Amount</th>
-                <th>Requested By</th>
-                <th>Date</th>
-                <th>Status</th>
+                <th>درخواست</th>
+                <th>پرونده تجاری</th>
+                <th>هدف</th>
+                <th>مبلغ</th>
+                <th>درخواست‌کننده</th>
+                <th>تاریخ</th>
+                <th>وضعیت</th>
               </tr>
             </thead>
 
@@ -88,13 +88,13 @@ function PaymentRequests() {
               <tr>
                 <td>PR-001</td>
                 <td>TR-001</td>
-                <td>Supplier Payment</td>
+                <td>پرداخت به تأمین‌کننده</td>
                 <td>$80,000</td>
-                <td>Procurement</td>
-                <td>Sep 20, 2026</td>
+                <td>تأمین</td>
+                <td>20 سپتامبر 2026</td>
                 <td>
                   <span className="payment-request-status pending">
-                    Pending
+                    در انتظار
                   </span>
                 </td>
               </tr>
@@ -102,13 +102,13 @@ function PaymentRequests() {
               <tr>
                 <td>PR-002</td>
                 <td>TR-002</td>
-                <td>Freight Payment</td>
+                <td>پرداخت حمل و نقل</td>
                 <td>$12,500</td>
-                <td>Logistics</td>
-                <td>Sep 19, 2026</td>
+                <td>لجستیک</td>
+                <td>19 سپتامبر 2026</td>
                 <td>
                   <span className="payment-request-status approved">
-                    Approved
+                    تأییدشده
                   </span>
                 </td>
               </tr>
@@ -116,13 +116,13 @@ function PaymentRequests() {
               <tr>
                 <td>PR-003</td>
                 <td>TR-003</td>
-                <td>Customs Cost</td>
+                <td>هزینه گمرکی</td>
                 <td>$4,500</td>
-                <td>Customs</td>
-                <td>Sep 18, 2026</td>
+                <td>گمرک</td>
+                <td>18 سپتامبر 2026</td>
                 <td>
                   <span className="payment-request-status approved">
-                    Approved
+                    تأییدشده
                   </span>
                 </td>
               </tr>
