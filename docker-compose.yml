@@ -13,6 +13,8 @@ services:
 
   backend:
     build: ./backend
+    env_file:
+      - .env
     volumes:
       - ./backend:/app
     ports:

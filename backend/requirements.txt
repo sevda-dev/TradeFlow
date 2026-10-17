@@ -5,3 +5,4 @@ django-filter
 psycopg[binary]
 pip==26.2.1
 django-cors-headers
+Pillow
